@@ -1,25 +1,92 @@
 [
   {
-    "media_name": "BBC News",
+    "media_name": "NHK World",
+    "geopolitical_block": "第一島鏈",
+    "geographic_info": { "continent": "Asia", "country_code": "JP" },
+    "attributes": { "media_type": "官媒", "bias_index": "中立穩健", "funding_source": "政府與收視費" },
+    "realist_note": "日本外交之聲，反映印太戰略下「美日同盟」的穩定觀點，避談具體武力對抗，強調國際法秩序。",
+    "links": { "official_url": "https://www3.nhk.or.jp/nhkworld/", "rss_feed": "https://www3.nhk.or.jp/rss/news/cat0.xml" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "中央社 CNA",
+    "geopolitical_block": "第一島鏈",
+    "geographic_info": { "continent": "Asia", "country_code": "TW" },
+    "attributes": { "media_type": "官媒", "bias_index": "中立", "funding_source": "政府撥款" },
+    "realist_note": "台灣對外資訊核心，核心意圖在於維持台海現狀之敘事權，資訊輸出高度受到印太安全框架影響。",
+    "links": { "official_url": "https://www.cna.com.tw/", "rss_feed": "https://feeds.feedburner.com/cnaFirstNews" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "Reuters 路透社",
     "geopolitical_block": "歐美核心",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "GB"
-    },
-    "attributes": {
-      "media_type": "民營",
-      "bias_index": "中立偏左",
-      "funding_source": "電視執照費"
-    },
-    "realist_note": "維護英國軟實力，在後殖民議題上有結構性盲區。",
-    "links": {
-      "official_url": "https://www.bbc.com/news",
-      "rss_feed": "http://feeds.bbci.co.uk/news/rss.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T15:53:32.257925Z"
-    }
+    "geographic_info": { "continent": "Global", "country_code": "GB" },
+    "attributes": { "media_type": "通訊社", "bias_index": "中立高度客觀", "funding_source": "湯森路透集團" },
+    "realist_note": "全球金融與地緣情報基準。其報導受跨國資本市場影響，對主權國家衝突常採取非道德化的數據敘事。",
+    "links": { "official_url": "https://www.reuters.com/", "rss_feed": "" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "CNN",
+    "geopolitical_block": "歐美核心",
+    "geographic_info": { "continent": "Americas", "country_code": "US" },
+    "attributes": { "media_type": "民營", "bias_index": "自由主義傾向", "funding_source": "華納兄弟探索" },
+    "realist_note": "反映美式自由主義價值。在領土爭議議題上高度對標美國國務院立場，為美國全球霸權之軟實力載體。",
+    "links": { "official_url": "https://edition.cnn.com/", "rss_feed": "http://rss.cnn.com/rss/edition.rss" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "Al Jazeera 半島電視台",
+    "geopolitical_block": "中東戰略區",
+    "geographic_info": { "continent": "Middle East", "country_code": "QA" },
+    "attributes": { "media_type": "官媒", "bias_index": "區域主義強烈", "funding_source": "卡達王室" },
+    "realist_note": "挑戰西方敘事的先鋒。致力於擴張卡達在中東事務的議程設置權，反對以色列與特定歐美軍事干預。",
+    "links": { "official_url": "https://www.aljazeera.com/", "rss_feed": "https://www.aljazeera.com/xml/rss/all.xml" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "RT (Russia Today)",
+    "geopolitical_block": "南半球新興市場",
+    "geographic_info": { "continent": "Europe/Asia", "country_code": "RU" },
+    "attributes": { "media_type": "官媒", "bias_index": "強烈國家主義", "funding_source": "俄羅斯聯邦政府" },
+    "realist_note": "俄羅斯資訊戰的核心。旨在消解歐美公信力，支持多極化世界觀。註：在多國被列為制裁對象。",
+    "links": { "official_url": "https://www.rt.com/", "rss_feed": "" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "Bloomberg 彭博社",
+    "geopolitical_block": "全球總經",
+    "geographic_info": { "continent": "Americas", "country_code": "US" },
+    "attributes": { "media_type": "民營", "bias_index": "資本市場導向", "funding_source": "彭博有限合夥企業" },
+    "realist_note": "服務於全球金融精英。其政治分析具備極強的利潤驅動特徵，對穩定性與資本流動的關注遠超意識形態。",
+    "links": { "official_url": "https://www.bloomberg.com/", "rss_feed": "" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "南華早報 SCMP",
+    "geopolitical_block": "第一島鏈",
+    "geographic_info": { "continent": "Asia", "country_code": "HK" },
+    "attributes": { "media_type": "民營", "bias_index": "溫和修正主義", "funding_source": "阿里巴巴集團" },
+    "realist_note": "理解中國立場與西方對接的窗口。在涉及國家安全議題上立場審慎，致力於緩衝地緣緊張局勢。",
+    "links": { "official_url": "https://www.scmp.com/", "rss_feed": "" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "聯合國新聞 UN News",
+    "geopolitical_block": "全球總經",
+    "geographic_info": { "continent": "Global", "country_code": "UN" },
+    "attributes": { "media_type": "官媒", "bias_index": "多邊主義", "funding_source": "聯合國成員國攤派" },
+    "realist_note": "形式上的國際秩序代理人。在各大國否決權交鋒下，其產出的資訊偏向人道救援與公約宣導，缺乏實質強制力。",
+    "links": { "official_url": "https://news.un.org/zh/", "rss_feed": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+  },
+  {
+    "media_name": "TRT World",
+    "geopolitical_block": "中東戰略區",
+    "geographic_info": { "continent": "Middle East", "country_code": "TR" },
+    "attributes": { "media_type": "官媒", "bias_index": "新鄂圖曼主義", "funding_source": "土耳其政府" },
+    "realist_note": "反映土耳其在北約與歐亞橋樑間的擺動。旨在推廣安卡拉作為突厥世界領導者的軟實力。",
+    "links": { "official_url": "https://www.trtworld.com/", "rss_feed": "" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
   }
 ]
