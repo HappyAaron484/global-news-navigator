@@ -278,10 +278,9 @@
     },
     "links": { "official_url": "https://www.caixin.com/", "rss_feed": "" },
     "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
-  }
-]
+  },
 
-{
+  {
     "media_name": "TASS (塔斯社)",
     "geopolitical_block": "BRICS+ (俄羅斯)",
     "region": "BRICS+",
@@ -561,3 +560,4 @@
     "links": { "official_url": "https://english.ahram.org.eg/", "rss_feed": "" },
     "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
   }
+]
