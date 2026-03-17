@@ -11,30 +11,32 @@
             --card: #161b22; 
             --border: #30363d; 
             --accent: #58a6ff; 
-            --text-high: #ffffff; /* 提高到純白，增加可讀性 */
-            --text-mid: #e6edf3;  /* 中階文字，清晰但不刺眼 */
+            --text-white: #ffffff; /* 強對比白 */
+            --text-high: #f0f6fc;  /* 高亮度灰白 */
             --text-muted: #8b949e; 
-            --val-gold: #ffa657;  /* 戰略價值的亮橘色 */
+            --val-gold: #ffb347;  /* 戰略價值的亮金橘色 */
         }
-        body { background: var(--bg); color: var(--text-mid); padding-bottom: 80px; font-family: sans-serif; }
+        body { background: var(--bg); color: var(--text-high); padding-bottom: 80px; font-family: -apple-system, system-ui, sans-serif; }
         .navbar { background: #010409 !important; border-bottom: 1px solid var(--border); }
         .filter-bar { background: var(--card); border: 1px solid var(--border); padding: 15px; border-radius: 8px; margin-bottom: 25px; }
         .btn-filter { color: var(--text-muted); border: 1px solid var(--border); margin: 3px; font-size: 0.9rem; font-weight: 500; }
         .btn-filter.active { background: #21262d; border-color: var(--accent); color: var(--accent); }
         
-        /* 強化卡片對比度 */
-        .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; height: 100%; transition: 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .card:hover { border-color: var(--accent); transform: translateY(-3px); }
-        .card-title { color: var(--text-high); font-weight: 800; letter-spacing: 0.5px; }
+        /* 強化卡片對比與間距 */
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; height: 100%; transition: 0.2s; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+        .card:hover { border-color: var(--accent); transform: translateY(-4px); }
+        .card-title { color: var(--text-white); font-weight: 800; font-size: 1.2rem; }
         
-        /* 解決字體太黑的問題 */
-        .strategic-box { border-left: 4px solid var(--val-gold); background: rgba(255, 166, 87, 0.05); padding: 12px; margin: 15px 0; border-radius: 0 4px 4px 0; }
-        .strategic-label { color: var(--val-gold); font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 5px; }
-        .strategic-text { color: var(--text-high); font-size: 0.95rem; line-height: 1.5; }
+        /* 解決字體太黑的問題：提高對比度 */
+        .strategic-box { border-left: 4px solid var(--val-gold); background: rgba(255, 179, 71, 0.08); padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; }
+        .strategic-label { color: var(--val-gold); font-weight: 800; font-size: 0.85rem; display: block; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+        .strategic-text { color: var(--text-white); font-size: 1rem; line-height: 1.5; font-weight: 500; }
         
-        .analysis-box { background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); }
-        .analysis-label { color: var(--accent); font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 5px; }
-        .analysis-text { color: var(--text-mid); font-size: 0.9rem; line-height: 1.6; }
+        .analysis-box { background: rgba(255,255,255,0.04); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
+        .analysis-label { color: var(--accent); font-weight: 800; font-size: 0.85rem; display: block; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+        .analysis-text { color: var(--text-high); font-size: 0.95rem; line-height: 1.6; }
+
+        .funding-info { font-size: 0.8rem; color: var(--text-muted); margin-top: 15px; padding-top: 10px; border-top: 1px solid var(--border); }
 
         /* RSS Ticker */
         .ticker-wrap {
@@ -42,23 +44,23 @@
             background: #010409; border-top: 2px solid var(--accent);
             z-index: 10000; overflow: hidden; line-height: 45px;
         }
-        .ticker-move { display: inline-block; white-space: nowrap; animation: ticker-anim 90s linear infinite; }
-        .ticker-item { display: inline-block; padding: 0 50px; color: var(--accent); font-weight: 600; font-size: 0.95rem; }
+        .ticker-move { display: inline-block; white-space: nowrap; animation: ticker-anim 100s linear infinite; }
+        .ticker-item { display: inline-block; padding: 0 60px; color: var(--accent); font-weight: 700; font-size: 0.95rem; }
         @keyframes ticker-anim { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
     </style>
 </head>
 <body>
 
 <nav class="navbar navbar-dark mb-4">
-    <div class="container">
-        <span class="navbar-brand fw-bold">🌐 Global News Navigator</span>
-        <span class="text-muted small" id="update-time">資料載入中...</span>
+    <div class="container d-flex justify-content-between">
+        <span class="navbar-brand fw-bold">🌐 Global News Navigator <small class="ms-2 text-muted fw-normal" style="font-size: 0.7rem;">Realpolitik Edition</small></span>
+        <span class="text-white small" id="update-time">衛星校準中...</span>
     </div>
 </nav>
 
 <div class="container">
-    <div class="filter-bar">
-        <div class="small text-muted mb-2 fw-bold">戰略區域過濾：</div>
+    <div class="filter-bar shadow">
+        <div class="small text-muted mb-2 fw-bold">戰略區域過濾 (按區域屬性對齊)：</div>
         <div id="filter-btns">
             <button class="btn btn-sm btn-filter active" onclick="applyFilter('All')">全部顯示</button>
             <button class="btn btn-sm btn-filter" onclick="applyFilter('印太')">印太 / 第一島鏈</button>
@@ -80,17 +82,17 @@
 <script>
     let mediaData = [];
 
-    // RSS 載入
+    // RSS 載入 (非阻塞)
     async function loadTicker() {
         try {
             const res = await fetch('data/ticker.json?v=' + Date.now());
             const data = await res.json();
-            if (data.headlines) {
+            if (data.headlines && data.headlines.length > 0) {
                 document.getElementById('ticker-content').innerHTML = data.headlines.map(h => `<span class="ticker-item">${h}</span>`).join('');
                 document.getElementById('update-time').innerText = "最後校驗: " + new Date(data.updated_at).toLocaleString();
             }
         } catch (e) {
-            document.getElementById('ticker-content').innerHTML = `<span class="ticker-item">⚠️ RSS 數據待生成，請點擊 GitHub 的 Run Workflow</span>`;
+            document.getElementById('ticker-content').innerHTML = `<span class="ticker-item">⚠️ RSS 數據生成中... 請確認 scripts/maintainer.py 執行成功</span>`;
         }
     }
 
@@ -101,7 +103,7 @@
             mediaData = await res.json();
             applyFilter('All');
         } catch (e) {
-            document.getElementById('news-grid').innerHTML = `<div class="col-12 text-center text-danger">媒體庫載入失敗: ${e.message}</div>`;
+            document.getElementById('news-grid').innerHTML = `<div class="col-12 text-center text-danger py-5">媒體庫載入失敗，請確認 data/news_sources.json 是否正確存檔。</div>`;
         }
     }
 
@@ -114,55 +116,67 @@
         const grid = document.getElementById('news-grid');
         grid.innerHTML = '';
 
-        // 核心修正：容錯性過濾邏輯
+        // 核心修正：聯邦式過濾邏輯 (對應多個地區至金磚標籤)
         const filtered = (reg === 'All') 
             ? mediaData 
             : mediaData.filter(item => {
-                // 如果是搜尋金磚/南半球，同時比對 region 與 geopolitical_block
+                const b = item.geopolitical_block || "";
+                const r = item.region || "";
+                
                 if (reg === 'BRICS+') {
-                    return item.region === 'BRICS+' || 
-                           item.region === '南美' || 
-                           item.region === '南亞' || 
-                           item.geopolitical_block.includes('BRICS');
+                    // 擴展篩選：包含標註為 BRICS、南美、非洲、南亞、或地緣板塊含有 BRICS 的所有媒體
+                    return r === 'BRICS+' || 
+                           r === '南美' || 
+                           r === '非洲' || 
+                           r === '南亞' || 
+                           r === '歐亞' || // 針對俄羅斯
+                           b.includes('BRICS');
                 }
-                return item.region === reg || (item.geopolitical_block && item.geopolitical_block.includes(reg));
+                
+                if (reg === '印太') {
+                    return r === '印太' || r === '東南亞' || b.includes('第一島鏈');
+                }
+
+                return r === reg || b.includes(reg);
             });
 
         if (filtered.length === 0) {
-            grid.innerHTML = '<div class="col-12 text-center py-5 text-muted">目前分類下暫無數據，請確認 JSON 中的 region 標註是否正確。</div>';
+            grid.innerHTML = `<div class="col-12 text-center py-5 text-muted">目前分類 [${reg}] 下暫無數據</div>`;
             return;
         }
 
         filtered.forEach(item => {
             const status = item.status || { is_live: false };
             grid.innerHTML += `
-                <div class="col-xl-6 mb-4">
+                <div class="col-xl-6 col-lg-6 mb-4">
                     <div class="card p-4">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h5 class="card-title mb-0">${item.media_name}</h5>
-                            <span class="badge bg-dark border border-secondary text-info" style="font-size:0.75rem;">${item.region}</span>
+                            <span class="badge bg-dark border border-secondary text-info px-2 py-1" style="font-size:0.7rem;">${item.region}</span>
                         </div>
                         
-                        <div class="d-flex align-items-center mb-3">
-                            <span class="badge ${item.funding_tag.includes('官方') ? 'bg-danger' : 'bg-success'} bg-opacity-75" style="font-size:0.7rem;">${item.funding_tag}</span>
-                            <span class="ms-3 small ${status.is_live ? 'text-success' : 'text-danger'}" style="font-weight:bold;">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge ${item.funding_tag.includes('官方') ? 'bg-danger' : 'bg-success'} px-2 py-1" style="font-size:0.7rem; font-weight:800;">${item.funding_tag}</span>
+                            <span class="ms-3 small ${status.is_live ? 'text-success' : 'text-danger'}" style="font-weight:900; letter-spacing:1px;">
                                 ${status.is_live ? '● ONLINE' : '○ OFFLINE'}
                             </span>
                         </div>
 
-                        <div class="strategic-box">
+                        <div class="strategic-box shadow-sm">
                             <span class="strategic-label">【戰略價值】</span>
                             <div class="strategic-text">${item.analysis.strategic_value}</div>
                         </div>
 
-                        <div class="analysis-box">
+                        <div class="analysis-box shadow-sm">
                             <span class="analysis-label">【地緣敘事反映】</span>
                             <div class="analysis-text">${item.analysis.narrative_logic}</div>
                         </div>
 
-                        <div class="mt-4 d-flex justify-content-between align-items-center">
-                            <span class="text-muted" style="font-size:0.75rem;">資金背景: ${item.funding_details.substring(0, 30)}...</span>
-                            <a href="${item.links.official_url}" target="_blank" class="btn btn-sm btn-primary px-4 fw-bold">開啟情報源</a>
+                        <div class="funding-info d-flex justify-content-between align-items-end">
+                            <div class="pe-3" style="font-size: 0.75rem; line-height:1.4;">
+                                <strong>資金細節:</strong> ${item.funding_details.substring(0, 70)}...
+                            </div>
+                            <a href="${item.links.official_url}" target="_blank" class="btn btn-sm btn-primary px-4 fw-bold shadow-sm">開啟情報源</a>
                         </div>
                     </div>
                 </div>`;
