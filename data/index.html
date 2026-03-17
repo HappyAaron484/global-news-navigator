@@ -3,88 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self';">
-    <title>全球新聞導航 - 安全加固版</title>
+    <title>全球新聞導航</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: system-ui, -apple-system, sans-serif; }
-        .navbar { background-color: #1a1a1a !important; }
-        .card { border: none; border-radius: 10px; transition: transform 0.2s; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
-        .card:hover { transform: translateY(-5px); }
-        .realist-note { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 10px; font-size: 0.85rem; border-radius: 4px; }
-        #error-display { display: none; }
+        body { background-color: #f4f7f6; }
+        .card { border: none; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        #debug-panel { 
+            background: #2d2d2d; color: #00ff00; padding: 15px; 
+            font-family: monospace; font-size: 13px; border-radius: 8px;
+            margin-bottom: 20px; border-left: 5px solid #ff0000;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-dark mb-4 shadow-sm">
-        <div class="container">
-            <span class="navbar-brand fw-bold">🌐 全球新聞導航系統</span>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div id="error-display" class="alert alert-danger shadow-sm"></div>
+    <div class="container py-5">
+        <h2 class="mb-4 fw-bold">🌐 全球新聞導航 <small class="text-muted" style="font-size: 0.9rem;">(Debug Mode)</small></h2>
+        
+        <div id="debug-panel">系統初始化中...</div>
 
         <div id="news-container" class="row">
-            <div class="col-12 text-center py-5">
-                <div class="spinner-border text-secondary" role="status"></div>
-                <p class="mt-3 text-muted">正在通過安全政策校驗並載入數據...</p>
             </div>
-        </div>
     </div>
 
     <script>
-        // 嚴格執行：避免使用 eval()，改用安全的 JSON.parse
-        async function secureLoad() {
+        // 3W: Who: Senior Analyst / Where: Frontend Debugger / When: 2026-03-18
+        
+        async function startApp() {
+            const debug = document.getElementById('debug-panel');
             const container = document.getElementById('news-container');
-            const errorBox = document.getElementById('error-display');
+
+            // 1. 檢測路徑環境
+            const currentUrl = window.location.href;
+            debug.innerText = `[1/3] 當前網址: ${currentUrl}\n`;
 
             try {
-                // 加入版本號防止 Cache 導致的舊政策衝突
-                const timestamp = new Date().getTime();
-                const response = await fetch(`./data/news_sources.json?v=${timestamp}`);
-                
-                if (!response.ok) throw new Error(`連線失敗 (HTTP ${response.status})`);
-                
-                const data = await response.json();
-                
-                container.innerHTML = ''; // 清除讀取中狀態
+                // 2. 嘗試讀取資料 (加上隨機參數防止 GitHub 強制快取舊檔案)
+                const jsonPath = './data/news_sources.json?v=' + Date.now();
+                debug.innerText += `[2/3] 正在請求資料: ${jsonPath}\n`;
 
+                const response = await fetch(jsonPath);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP 讀取失敗! 錯誤碼: ${response.status} (請檢查 data 資料夾是否正確)`);
+                }
+
+                const data = await response.json();
+                debug.innerText += `[3/3] 成功讀取到 ${data.length} 筆資料！\n`;
+                debug.style.borderColor = "#00ff00"; // 成功時變綠色
+
+                // 3. 渲染資料
+                if (data.length === 0) {
+                    container.innerHTML = '<div class="col-12 text-center">JSON 檔案是空的。</div>';
+                }
+
+                let htmlContent = '';
                 data.forEach(item => {
-                    // 使用安全字串模板
-                    const cardTemplate = `
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <h6 class="fw-bold m-0">${item.media_name}</h6>
-                                        <span class="badge bg-dark" style="font-size: 0.7rem;">${item.geopolitical_block}</span>
-                                    </div>
-                                    <p class="text-muted" style="font-size: 0.75rem;">${item.geographic_info.continent} · ${item.attributes.media_type}</p>
-                                    <div class="realist-note mb-3">
-                                        <strong>現實主義評註：</strong><br>${item.realist_note}
-                                    </div>
-                                    <a href="${item.links.official_url}" target="_blank" class="btn btn-outline-primary btn-sm w-100">開啟新聞源</a>
+                    htmlContent += `
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 p-3">
+                                <span class="badge bg-dark w-25 mb-2">${item.geopolitical_block}</span>
+                                <h5 class="fw-bold">${item.media_name}</h5>
+                                <p class="text-secondary small">${item.geographic_info.continent} · ${item.attributes.media_type}</p>
+                                <div class="p-2 bg-light rounded mb-3" style="font-size: 0.85rem;">
+                                    <strong>評註：</strong>${item.realist_note}
                                 </div>
-                                <div class="card-footer bg-transparent border-0 text-muted" style="font-size: 0.7rem;">
-                                    校驗時間：${new Date(item.status.verified_at).toLocaleString()}
-                                </div>
+                                <a href="${item.links.official_url}" target="_blank" class="btn btn-primary btn-sm w-50">訪問來源</a>
                             </div>
                         </div>`;
-                    // 使用 insertAdjacentHTML 比 innerHTML 更符合安全規範
-                    container.insertAdjacentHTML('beforeend', cardTemplate);
                 });
+                container.innerHTML = htmlContent;
 
             } catch (err) {
-                console.error("CSP 或 資料讀取錯誤:", err);
-                container.style.display = 'none';
-                errorBox.style.display = 'block';
-                errorBox.textContent = `[系統警報]：${err.message}。這可能是因為 JSON 格式損壞或 GitHub Actions 尚未完成資料同步。`;
+                // 錯誤捕捉
+                debug.innerText += `\n❌ 發生錯誤:\n${err.message}`;
+                debug.style.color = "#ff4d4d";
+                console.error(err);
             }
         }
 
-        // 監聽載入事件，不使用內嵌 onclick
-        window.addEventListener('DOMContentLoaded', secureLoad);
+        window.onload = startApp;
     </script>
 </body>
 </html>
