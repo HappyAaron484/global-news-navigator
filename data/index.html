@@ -7,12 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f8f9fa; }
-        .card { border: none; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        #error-log { 
-            display: none; background: #fee; color: #b00; padding: 20px; 
-            border: 1px solid #fcc; border-radius: 8px; margin-bottom: 20px;
-            font-family: monospace; white-space: pre-wrap;
+        .card { border: none; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        #diagnostic-panel { 
+            background: #212529; color: #00ff00; padding: 20px; 
+            border-radius: 8px; font-family: monospace; display: none; margin-bottom: 20px;
         }
     </style>
 </head>
@@ -20,80 +18,79 @@
     <div class="container py-5">
         <h2 class="fw-bold mb-4">🌐 全球新聞導航系統</h2>
         
-        <div id="error-log"></div>
+        <div id="diagnostic-panel"></div>
 
         <div id="news-container" class="row">
-            <div class="col-12 text-center py-5" id="loading-spinner">
+            <div class="col-12 text-center py-5" id="loader">
                 <div class="spinner-border text-primary" role="status"></div>
-                <p class="mt-3">正在解碼地緣政治數據...</p>
+                <p class="mt-3">正在嘗試從伺服器解碼數據...</p>
             </div>
         </div>
     </div>
 
     <script>
-        async function loadAndRender() {
+        async function runDiagnostic() {
+            const panel = document.getElementById('diagnostic-panel');
             const container = document.getElementById('news-container');
-            const errorLog = document.getElementById('error-log');
-            const spinner = document.getElementById('loading-spinner');
+            const loader = document.getElementById('loader');
+
+            const log = (msg, color = "#00ff00") => {
+                panel.style.display = "block";
+                panel.innerHTML += `<div style="color:${color}">> ${msg}</div>`;
+            };
 
             try {
-                // 強制使用相對路徑，並加上時間戳防止快取
+                log("開始連線測試...");
+                // 強制讀取當前目錄下的 data 資料夾
                 const url = `data/news_sources.json?t=${new Date().getTime()}`;
-                console.log("Fetching from:", url);
+                log(`目標路徑: ${url}`);
 
                 const response = await fetch(url);
-                
-                if (!response.ok) {
-                    throw new Error(`連線失敗！狀態碼：${response.status}\n請檢查 data/news_sources.json 是否真的在 data 資料夾內。`);
-                }
+                log(`伺服器回應狀態: ${response.status} ${response.statusText}`);
 
-                const rawText = await response.text(); // 先抓取原始文字
+                if (!response.ok) throw new Error("檔案讀取失敗，請檢查 data 資料夾。");
+
+                const rawText = await response.text();
+                log("原始數據抓取成功，正在進行 JSON 格式解析...");
+
                 let data;
-                
                 try {
-                    data = JSON.parse(rawText); // 嘗試解析
+                    data = JSON.parse(rawText);
                 } catch (jsonErr) {
-                    throw new Error(`JSON 格式損壞！\n錯誤原因：${jsonErr.message}\n\n這通常是因為您的 JSON 檔案裡多了或少了括號、逗號。`);
+                    log(`解析失敗！ JSON 格式有誤: ${jsonErr.message}`, "#ff4d4d");
+                    log(`建議檢查: 最後一個媒體物件後方是否多了逗號？`, "#ffc107");
+                    throw jsonErr;
                 }
 
-                spinner.style.display = 'none';
-                
-                if (data.length === 0) {
-                    container.innerHTML = '<div class="alert alert-warning">資料庫內尚無媒體資料。</div>';
-                    return;
-                }
+                log(`解碼成功: 找到 ${data.length} 筆媒體資源。`, "#00ff00");
+                loader.style.display = "none";
 
                 let html = '';
-                data.forEach((item, index) => {
+                data.forEach(item => {
                     html += `
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <h5 class="fw-bold mb-0">${item.media_name}</h5>
-                                    <span class="badge bg-dark">${item.geopolitical_block}</span>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h5 class="fw-bold">${item.media_name}</h5>
+                                    <span class="badge bg-primary">${item.geopolitical_block}</span>
                                 </div>
                                 <p class="text-muted small">${item.geographic_info.continent} · ${item.attributes.media_type}</p>
-                                <div class="p-3 bg-light rounded border-start border-primary border-4 mb-3">
-                                    <strong>現實主義評註：</strong><br>${item.realist_note}
+                                <div class="p-3 bg-light rounded border-start border-4 border-info mb-3" style="font-size:0.9rem;">
+                                    <strong>評註：</strong>${item.realist_note}
                                 </div>
-                                <div class="mt-auto">
-                                    <a href="${item.links.official_url}" target="_blank" class="btn btn-primary btn-sm">訪問媒體</a>
-                                    <span class="text-muted ms-2" style="font-size: 0.7rem;">校驗：${new Date(item.status.verified_at).toLocaleDateString()}</span>
-                                </div>
+                                <a href="${item.links.official_url}" target="_blank" class="btn btn-dark btn-sm w-50">前往來源</a>
                             </div>
                         </div>`;
                 });
                 container.innerHTML = html;
 
             } catch (err) {
-                spinner.style.display = 'none';
-                errorLog.style.display = 'block';
-                errorLog.innerText = `⚠️ 系統故障報告：\n------------------------\n${err.message}`;
-                console.error(err);
+                loader.style.display = "none";
+                log(`系統終斷: ${err.message}`, "#ff4d4d");
             }
         }
 
-        window.onload = loadAndRender;
+        window.onload = runDiagnostic;
     </script>
 </body>
 </html>
