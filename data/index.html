@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球新聞導航 - 地緣政治視角</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .block-tag { font-size: 0.8rem; padding: 2px 8px; border-radius: 4px; }
+        .realist-note { font-style: italic; color: #666; font-size: 0.9rem; border-left: 3px solid #dee2e6; padding-left: 10px; }
+        .card { transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">全球新聞導航系統</span>
+        </div>
+    </nav>
+    <div class="container py-3">
+        <div id="news-container" class="row">
+            </div>
+    </div>
+    <script>
+        fetch('data/news_sources.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('news-container');
+                data.forEach(item => {
+                    container.innerHTML += `
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title text-primary">${item.media_name}</h5>
+                                        <span class="badge bg-secondary block-tag">${item.geopolitical_block}</span>
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted small">${item.geographic_info.continent} (${item.geographic_info.country_code})</h6>
+                                    <p class="card-text small text-secondary">${item.attributes.media_type} | ${item.attributes.bias_index}</p>
+                                    <p class="realist-note">現實主義評註：${item.realist_note}</p>
+                                    <div class="mt-3">
+                                        <a href="${item.links.official_url}" target="_blank" class="btn btn-primary btn-sm">前往官網</a>
+                                        ${item.links.rss_feed ? `<a href="${item.links.rss_feed}" target="_blank" class="btn btn-outline-info btn-sm">RSS</a>` : ''}
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted small">
+                                    狀態：${item.status.http_code === 200 ? '🟢 在線' : '🔴 檢測失敗'} | 最後校驗：${new Date(item.status.verified_at).toLocaleString()}
+                                </div>
+                            </div>
+                        </div>`;
+                });
+            });
+    </script>
+</body>
+</html>
