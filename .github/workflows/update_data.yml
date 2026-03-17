@@ -1,39 +1,53 @@
-name: Global News Auto-Maintenance
+name: Global News Auto-Maintenance & Deploy
 
 on:
   schedule:
-    - cron: '0 4 * * *' # 每日 UTC 04:00 (台灣中午 12 點) 自動執行
-  workflow_dispatch: # 允許您在 Actions 頁面隨時手動觸發執行
+    - cron: '0 4 * * *' # 每日中午 12:00 (台北時間)
+  workflow_dispatch: # 允許手動執行
+
+# 設定權限以允許部署到 GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 env:
-  # 3W 標註: 
-  # Where: GitHub Actions Documentation
-  # Who: Senior System Analyst
-  # When: 2026-03-17
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # 強制啟用 Node.js 24 環境以消除棄用警告
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  update-database:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4 # 採用支援 Node.js 24 的最新版本
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5 # 採用支援 Node.js 24 的最新版本
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Run Maintainer Script
+      - name: Update News Data
         run: python scripts/maintainer.py
 
-      - name: Commit and Push changes
+      - name: Commit and Push Changes
         run: |
           git config --global user.name "System-Automator"
           git config --global user.email "automator@github.com"
           git add data/news_sources.json
-          git commit -m "Auto-update: News source status [Skip CI]" || exit 0
+          git commit -m "Auto-update: News source verified [Skip CI]" || exit 0
           git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.' # 部署整個根目錄 (包含 index.html 和 data/)
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
