@@ -1,1122 +1,442 @@
 [
   {
     "media_name": "The New York Times (紐約時報)",
-    "geopolitical_block": "歐美核心 (美國)",
     "region": "北美",
-    "geographic_info": {
-      "continent": "Americas",
-      "country_code": "US"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "自由主義建制派",
-      "funding_source": "訂閱與廣告"
-    },
+    "funding_tag": "[私營/商業]",
+    "funding_details": "由紐約時報公司 (The New York Times Company) 運營，蘇茲伯格家族 (Sulzberger family) 透過 A 類與 B 類股權結構維持控制。資金主要源於全球數百萬名付費訂閱者與數位廣告。",
     "analysis": {
-      "strategic_value": "極高 (美國精英意識形態指標)",
-      "narrative_logic": "反映美國民主黨與自由派精英的全球觀點。其對人權與民主價值的強調，是美國「軟實力」輸出的核心載體。",
-      "risk_indicator": "對非西方政體帶有強烈批判偏見，其敘事往往預示著美國外交政策的道德轉向。"
+      "strategic_value": "極高 (美國自由派精英意識形態指標)",
+      "narrative_logic": "反映美國自由主義建制派觀點。其敘事高度影響國際人權與民主議程。"
     },
-    "links": {
-      "official_url": "https://www.nytimes.com/",
-      "rss_feed": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:20.029533Z"
-    }
-  },
-  {
-    "media_name": "The Wall Street Journal (華爾街日報)",
-    "geopolitical_block": "歐美核心 (美國)",
-    "region": "北美",
-    "geographic_info": {
-      "continent": "Americas",
-      "country_code": "US"
-    },
-    "attributes": {
-      "media_type": "財經專業媒體",
-      "bias_index": "保守主義、資本導向",
-      "funding_source": "新聞集團 (News Corp)"
-    },
-    "analysis": {
-      "strategic_value": "極高 (全球貿易與資本流動導向)",
-      "narrative_logic": "代表美國共和黨建制派與華爾街資本。其對中國科技禁令與聯準會動向的報導，具備極高的政策預判價值。",
-      "risk_indicator": "評論版面立場鮮明，需區分其事實報導與保守派評論。"
-    },
-    "links": {
-      "official_url": "https://www.wsj.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": false,
-      "http_code": 401,
-      "verified_at": "2026-03-17T17:00:20.217836Z"
-    }
-  },
-  {
-    "media_name": "Bloomberg News (彭博社)",
-    "geopolitical_block": "全球資本核心",
-    "region": "北美",
-    "geographic_info": {
-      "continent": "Americas",
-      "country_code": "US"
-    },
-    "attributes": {
-      "media_type": "財經通訊社",
-      "bias_index": "數據導向、親資本",
-      "funding_source": "邁克爾·彭博"
-    },
-    "analysis": {
-      "strategic_value": "最高 (全球金融決策基準)",
-      "narrative_logic": "從資本流動角度分析政治。對穩定性與資本流動的關注遠超意識形態，是量化交易者的核心來源。",
-      "risk_indicator": "在涉及環境政策 (ESG) 時，帶有強烈的特定意識形態推廣傾向。"
-    },
-    "links": {
-      "official_url": "https://www.bloomberg.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": false,
-      "http_code": 403,
-      "verified_at": "2026-03-17T17:00:20.419451Z"
-    }
-  },
-  {
-    "media_name": "CNN (有線電視新聞網)",
-    "geopolitical_block": "歐美核心 (美國)",
-    "region": "北美",
-    "geographic_info": {
-      "continent": "Americas",
-      "country_code": "US"
-    },
-    "attributes": {
-      "media_type": "電視新聞網",
-      "bias_index": "自由派偏向",
-      "funding_source": "華納兄弟探索"
-    },
-    "analysis": {
-      "strategic_value": "中高 (美國公眾輿論影響力)",
-      "narrative_logic": "擅長設置全球突發議題，其報導往往驅動國際社會對特定地區衝突的關注（CNN 效應）。",
-      "risk_indicator": "報導具備較強的情緒化傾向，對於複雜地緣衝突有簡化為「二元對立」的習慣。"
-    },
-    "links": {
-      "official_url": "https://edition.cnn.com/",
-      "rss_feed": "http://rss.cnn.com/rss/edition.rss"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:20.557106Z"
-    }
-  },
-  {
-    "media_name": "Foreign Affairs (外交事務)",
-    "geopolitical_block": "歐美核心 (智庫)",
-    "region": "北美",
-    "geographic_info": {
-      "continent": "Americas",
-      "country_code": "US"
-    },
-    "attributes": {
-      "media_type": "專業期刊",
-      "bias_index": "精英主義、戰略現實主義",
-      "funding_source": "外交關係協會 (CFR)"
-    },
-    "analysis": {
-      "strategic_value": "極高 (美國全球戰略藍圖)",
-      "narrative_logic": "這不是新聞，而是政策預告。許多美國重大外交轉向（如冷戰圍堵、對華接觸）皆發軔於此。",
-      "risk_indicator": "理論性極強，反映的是「決策層」的想法，而非當前的市場現狀。"
-    },
-    "links": {
-      "official_url": "https://www.foreignaffairs.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:20.774707Z"
-    }
+    "links": { "official_url": "https://www.nytimes.com/" }
   },
   {
     "media_name": "BBC News (英國廣播公司)",
-    "geopolitical_block": "歐美核心 (英國)",
     "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "GB"
-    },
-    "attributes": {
-      "media_type": "公共廣播",
-      "bias_index": "中立、帶有西方普世價值",
-      "funding_source": "英國收視費與政府撥款"
-    },
+    "funding_tag": "[政府資助/公共]",
+    "funding_details": "主要透過英國國民繳納的「電視執照費」(License Fee) 運作，並接受外交、聯邦及發展事務部 (FCDO) 針對其國際頻道 (World Service) 的撥款。雖受政府資助，但受皇家憲章保障其編輯獨立性。",
     "analysis": {
-      "strategic_value": "極高 (全球南方與大英國協影響力)",
-      "narrative_logic": "英國全球影響力的「軟實力」核心。其對地區衝突的調研具備極高的嚴謹度，反映英國在外交上的「離岸平衡」視角。",
-      "risk_indicator": "對傳統殖民地區的報導仍帶有某種程度的家長式敘事。"
+      "strategic_value": "極高 (全球議題設置與區域衝突深度調研)",
+      "narrative_logic": "反映大英國協與西方普世價值，採取相對中立但帶有自由主義傾向的敘事。"
     },
-    "links": {
-      "official_url": "https://www.bbc.com/news",
-      "rss_feed": "https://feeds.bbci.co.uk/news/world/rss.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:21.125414Z"
-    }
-  },
-  {
-    "media_name": "Reuters (路透社)",
-    "geopolitical_block": "全球通訊社",
-    "region": "全球",
-    "geographic_info": {
-      "continent": "Global",
-      "country_code": "GB"
-    },
-    "attributes": {
-      "media_type": "通訊社",
-      "bias_index": "高度客觀、數據驅動",
-      "funding_source": "湯森路透"
-    },
-    "analysis": {
-      "strategic_value": "最高 (地緣情報基準)",
-      "narrative_logic": "採取非道德化的數據敘事，服務於全球金融與決策終端。是觀察各國官方數據與動作的最快渠道。",
-      "risk_indicator": "缺乏深層政治動機分析，僅提供事實框架。"
-    },
-    "links": {
-      "official_url": "https://www.reuters.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": false,
-      "http_code": 401,
-      "verified_at": "2026-03-17T17:00:21.270818Z"
-    }
-  },
-  {
-    "media_name": "The Economist (經濟學人)",
-    "geopolitical_block": "歐美核心 (英國)",
-    "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "GB"
-    },
-    "attributes": {
-      "media_type": "雜誌",
-      "bias_index": "古典自由主義、全球化倡導者",
-      "funding_source": "私營股權"
-    },
-    "analysis": {
-      "strategic_value": "高 (全球自由貿易防線)",
-      "narrative_logic": "反映倫敦與跨國精英的觀點。堅定支持自由市場、開放邊界，對民粹主義與貿易保護主義持強烈批判態度。",
-      "risk_indicator": "對新興市場的複雜文化背景有時會因其強烈的意識形態而產生誤判。"
-    },
-    "links": {
-      "official_url": "https://www.economist.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": false,
-      "http_code": 403,
-      "verified_at": "2026-03-17T17:00:21.411965Z"
-    }
-  },
-  {
-    "media_name": "The Guardian (衛報)",
-    "geopolitical_block": "歐美核心 (英國)",
-    "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "GB"
-    },
-    "attributes": {
-      "media_type": "私營媒體",
-      "bias_index": "左翼、進步派",
-      "funding_source": "斯考特信託 (Scott Trust)"
-    },
-    "analysis": {
-      "strategic_value": "中高 (全球環境與人權議題引領者)",
-      "narrative_logic": "專注於揭露國家監控、環境破壞與社會不公。其對斯諾登事件、氣候危機的報導具備國際影響力。",
-      "risk_indicator": "在涉及西方傳統地緣利益時，立場往往與國家機構產生強烈對抗。"
-    },
-    "links": {
-      "official_url": "https://www.theguardian.com/world",
-      "rss_feed": "https://www.theguardian.com/world/rss"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:21.623808Z"
-    }
-  },
-  {
-    "media_name": "The Globe and Mail (環球郵報)",
-    "geopolitical_block": "歐美核心 (加拿大)",
-    "region": "北美",
-    "geographic_info": {
-      "continent": "Americas",
-      "country_code": "CA"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "中右派建制派",
-      "funding_source": "Woodbridge 公司"
-    },
-    "analysis": {
-      "strategic_value": "中 (五眼聯盟中的次要觀察點)",
-      "narrative_logic": "反映加拿大在美中博弈中的外交平衡困境。在涉及北極主權、大宗商品貿易與印太戰略上有獨特視角。",
-      "risk_indicator": "報導立場高度依賴加拿大的國內政局走向。"
-    },
-    "links": {
-      "official_url": "https://www.theglobeandmail.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:22.352201Z"
-    }
-  },
-  {
-    "media_name": "中央通訊社 (CNA)",
-    "geopolitical_block": "第一島鏈 (台灣)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "TW"
-    },
-    "attributes": {
-      "media_type": "國家通訊社",
-      "bias_index": "中立、維護現狀",
-      "funding_source": "政府撥款"
-    },
-    "analysis": {
-      "strategic_value": "極高 (台海衝突前哨資訊)",
-      "narrative_logic": "台灣對外的官方聲音，核心意圖是維持台海現狀敘事，並反映台灣在印太安全架構中的位置。",
-      "risk_indicator": "對外交突破的報導具備強烈的外交期望色彩。"
-    },
-    "links": {
-      "official_url": "https://www.cna.com.tw/",
-      "rss_feed": "https://feeds.feedburner.com/cnaFirstNews"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:23.592180Z"
-    }
-  },
-  {
-    "media_name": "自由時報 (Liberty Times)",
-    "geopolitical_block": "第一島鏈 (台灣)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "TW"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "本土派、反制北京敘事",
-      "funding_source": "聯邦企業集團"
-    },
-    "analysis": {
-      "strategic_value": "高 (觀察台灣本土情緒指標)",
-      "narrative_logic": "強調台灣主體性，對中國滲透、灰色地帶行動具備極高的敏感度。反映台灣本土政權的戰略紅線。",
-      "risk_indicator": "對部分國際情勢的解讀帶有強烈的本土政治意圖。"
-    },
-    "links": {
-      "official_url": "https://www.ltn.com.tw/",
-      "rss_feed": "https://news.ltn.com.tw/rss/all.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:23.836581Z"
-    }
-  },
-  {
-    "media_name": "NHK World-Japan",
-    "geopolitical_block": "第一島鏈 (日本)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "JP"
-    },
-    "attributes": {
-      "media_type": "公共廣播",
-      "bias_index": "中立穩健",
-      "funding_source": "政府與收視費"
-    },
-    "analysis": {
-      "strategic_value": "高 (日本印太戰略窗口)",
-      "narrative_logic": "反映日本外交部 (MOFA) 觀點。主要推動「自由開放的印太」(FOIP)，強調以規則為基礎的國際秩序。",
-      "risk_indicator": "語氣過於溫和，當其出現強烈詞彙時代表日本國策有重大變動。"
-    },
-    "links": {
-      "official_url": "https://www3.nhk.or.jp/nhkworld/",
-      "rss_feed": "https://www3.nhk.or.jp/rss/news/cat0.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:25.584531Z"
-    }
-  },
-  {
-    "media_name": "讀賣新聞 (Yomiuri Shimbun)",
-    "geopolitical_block": "第一島鏈 (日本)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "JP"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "保守、支持美日同盟",
-      "funding_source": "讀賣集團"
-    },
-    "analysis": {
-      "strategic_value": "高 (觀察日本防務改革標竿)",
-      "narrative_logic": "代表日本自民黨主流保守派。高度支持修憲與國防預算增加，反映日本在區域安全上的積極主義。",
-      "risk_indicator": "對鄰國（中、韓、俄）立場堅硬，反映日本民族主義脈動。"
-    },
-    "links": {
-      "official_url": "https://www.yomiuri.co.jp/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:26.008373Z"
-    }
-  },
-  {
-    "media_name": "日本經濟新聞 (Nikkei)",
-    "geopolitical_block": "第一島鏈 (日本)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "JP"
-    },
-    "attributes": {
-      "media_type": "財經報紙",
-      "bias_index": "全球化導向、技術導向",
-      "funding_source": "日本經濟新聞社"
-    },
-    "analysis": {
-      "strategic_value": "極高 (亞洲供應鏈與半導體情報)",
-      "narrative_logic": "對亞洲科技供應鏈（特別是半導體與能源）具備全球最強的調研能力。反映日本產業資本的全球佈局。",
-      "risk_indicator": "報導高度關注企業利益，有時會淡化純粹的政治風險。"
-    },
-    "links": {
-      "official_url": "https://www.nikkei.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:28.593198Z"
-    }
-  },
-  {
-    "media_name": "韓聯社 (Yonhap)",
-    "geopolitical_block": "第一島鏈 (韓國)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "KR"
-    },
-    "attributes": {
-      "media_type": "國家通訊社",
-      "bias_index": "中立、國家安全導向",
-      "funding_source": "政府撥款"
-    },
-    "analysis": {
-      "strategic_value": "高 (朝鮮半島危機觀測站)",
-      "narrative_logic": "對北韓動態、飛彈發射與韓美聯合軍演具備第一手權威性資訊。反映南韓政府的紅線。",
-      "risk_indicator": "報導受南韓《國家保安法》與外交政策調整影響較大。"
-    },
-    "links": {
-      "official_url": "https://en.yna.co.kr/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:29.803278Z"
-    }
-  },
-  {
-    "media_name": "朝鮮日報 (Chosun Ilbo)",
-    "geopolitical_block": "第一島鏈 (韓國)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "KR"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "保守、對朝強硬",
-      "funding_source": "朝鮮日報社"
-    },
-    "analysis": {
-      "strategic_value": "中高 (南韓保守政權風向標)",
-      "narrative_logic": "支持強化韓美日同盟，主張對北韓施加最大壓力。反映南韓保守派精英的戰略思想。",
-      "risk_indicator": "政治色彩強烈，對進步派政權（如過往文在寅政府）持極度對立立場。"
-    },
-    "links": {
-      "official_url": "https://www.chosun.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:30.218502Z"
-    }
-  },
-  {
-    "media_name": "ABC News (澳洲廣播公司)",
-    "geopolitical_block": "五眼聯盟 (澳洲)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Oceania",
-      "country_code": "AU"
-    },
-    "attributes": {
-      "media_type": "公共廣播",
-      "bias_index": "中立、區域安全導向",
-      "funding_source": "澳洲政府"
-    },
-    "analysis": {
-      "strategic_value": "高 (AUKUS 與太平洋島國動態)",
-      "narrative_logic": "澳洲重返印太戰略的核心媒體。專注於 AUKUS 潛艦協議、南太平洋島國外交競逐及中澳貿易戰。",
-      "risk_indicator": "報導反映澳洲在「中國市場」與「美國安全」間的深層焦慮。"
-    },
-    "links": {
-      "official_url": "https://www.abc.net.au/news",
-      "rss_feed": "https://www.abc.net.au/news/feed/45910/rss.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:31.038182Z"
-    }
+    "links": { "official_url": "https://www.bbc.com/news" }
   },
   {
     "media_name": "人民日報海外版",
-    "geopolitical_block": "BRICS+ (中國)",
     "region": "歐亞",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "CN"
-    },
-    "attributes": {
-      "media_type": "黨報官媒",
-      "bias_index": "強烈國家意志",
-      "funding_source": "中國政府"
-    },
+    "funding_tag": "[國家官方]",
+    "funding_details": "由中國共產黨中央委員會直接掌控與撥款，是中國最高級別的官方報刊。其預算與運作完全納入國家宣傳體系。",
     "analysis": {
-      "strategic_value": "中高 (中國官方對外定調)",
-      "narrative_logic": "這不是新聞，是「政治宣示」。其措辭（如「嚴重關切」、「玩火自焚」）是判斷中國軍事行動可能性的唯一官方辭典。",
-      "risk_indicator": "資訊完全過濾，僅用於理解官方敘事，不可作為實證數據使用。"
+      "strategic_value": "中高 (判斷中國官方對外定調與政治紅線)",
+      "narrative_logic": "完全反映國家意志。其辭彙的使用嚴格對標中央政治局的戰略導向。"
     },
-    "links": {
-      "official_url": "http://paper.people.com.cn/rmrbhwb/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:32.202900Z"
-    }
-  },
-  {
-    "media_name": "財新網 (Caixin)",
-    "geopolitical_block": "BRICS+ (中國)",
-    "region": "歐亞",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "CN"
-    },
-    "attributes": {
-      "media_type": "民營專業財經",
-      "bias_index": "改革派技術官僚導向",
-      "funding_source": "胡舒立團隊"
-    },
-    "analysis": {
-      "strategic_value": "高 (中國經濟實況緩衝區)",
-      "narrative_logic": "中國內部最具公信力的財經媒體。在有限空間內提供對中國債務、房地產與金融風險的真實調查。反映技術官僚對風險的警告。",
-      "risk_indicator": "受日益嚴格的媒體管控影響，其調查深度正在面臨邊界挑戰。"
-    },
-    "links": {
-      "official_url": "https://www.caixin.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:33.904498Z"
-    }
-  },
-  {
-    "media_name": "TASS (塔斯社)",
-    "geopolitical_block": "BRICS+ (俄羅斯)",
-    "region": "BRICS+",
-    "geographic_info": {
-      "continent": "Europe/Asia",
-      "country_code": "RU"
-    },
-    "attributes": {
-      "media_type": "國家通訊社",
-      "bias_index": "官方意志、國家主義",
-      "funding_source": "俄羅斯政府"
-    },
-    "analysis": {
-      "strategic_value": "中 (克里姆林宮紅線觀測器)",
-      "narrative_logic": "核心任務是傳達普丁政府的戰略意圖。在衝突期間，其措辭的轉變（如從『特別軍事行動』轉向『戰爭』）是判斷俄方升級意願的直接指標。",
-      "risk_indicator": "高度過濾。對戰果與制裁影響的報導往往經過極大程度的敘事修正。"
-    },
-    "links": {
-      "official_url": "https://tass.com/",
-      "rss_feed": "https://tass.com/rss/v2.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:34.849505Z"
-    }
-  },
-  {
-    "media_name": "RT (Russia Today)",
-    "geopolitical_block": "BRICS+ (俄羅斯)",
-    "region": "BRICS+",
-    "geographic_info": {
-      "continent": "Global",
-      "country_code": "RU"
-    },
-    "attributes": {
-      "media_type": "對外宣傳媒體",
-      "bias_index": "反西方、多極化敘事",
-      "funding_source": "俄羅斯政府"
-    },
-    "analysis": {
-      "strategic_value": "低至中 (觀察俄方對外資訊戰策略)",
-      "narrative_logic": "旨在消解西方媒體公信力，並在歐美內部煽動對立。是理解俄羅斯如何利用「多極化」概念爭取全球南方認同的視角。",
-      "risk_indicator": "在多國被列為制裁對象。其內容常涉及陰謀論或選擇性事實。"
-    },
-    "links": {
-      "official_url": "https://www.rt.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:37.921905Z"
-    }
-  },
-  {
-    "media_name": "Times of India",
-    "geopolitical_block": "BRICS+ (印度)",
-    "region": "BRICS+",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "IN"
-    },
-    "attributes": {
-      "media_type": "私營大眾報紙",
-      "bias_index": "商業導向、溫和民族主義",
-      "funding_source": "Bennett, Coleman & Co."
-    },
-    "analysis": {
-      "strategic_value": "中高 (觀察印度大眾情緒與市場脈動)",
-      "narrative_logic": "反映印度崛起中的中產階級與商業精英觀點。支持印度的「大國外交」，對邊境領土議題與巴基斯坦問題立場堅決。",
-      "risk_indicator": "報導具備較強的商業色彩，政治深度有時被娛樂或瑣碎新聞稀釋。"
-    },
-    "links": {
-      "official_url": "https://timesofindia.indiatimes.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:38.345197Z"
-    }
-  },
-  {
-    "media_name": "The Hindu",
-    "geopolitical_block": "BRICS+ (印度)",
-    "region": "BRICS+",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "IN"
-    },
-    "attributes": {
-      "media_type": "專業精英報紙",
-      "bias_index": "左翼中立、不結盟主義",
-      "funding_source": "Kasturi & Sons"
-    },
-    "analysis": {
-      "strategic_value": "高 (印度外交與智庫級分析)",
-      "narrative_logic": "反映印度「戰略自主」的根基。對印度在金磚、G20 及與俄、美關係中的平衡藝術有極其深刻的解讀。",
-      "risk_indicator": "報導偏向嚴肅政策，可能無法完全反映基層民族主義的激進變動。"
-    },
-    "links": {
-      "official_url": "https://www.thehindu.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:38.521920Z"
-    }
+    "links": { "official_url": "http://paper.people.com.cn/rmrbhwb/" }
   },
   {
     "media_name": "Al Jazeera (半島電視台)",
-    "geopolitical_block": "中東中樞 (卡達)",
     "region": "中東",
-    "geographic_info": {
-      "continent": "Middle East",
-      "country_code": "QA"
-    },
-    "attributes": {
-      "media_type": "政府資助媒體",
-      "bias_index": "全球南方、挑戰西方霸權",
-      "funding_source": "卡達王室"
-    },
+    "funding_tag": "[國家資助]",
+    "funding_details": "由卡達政府直接撥款與資助。雖然其主張編輯獨立，但在涉及卡達與海灣國家核心利益時，其立場與卡達王室保持一致。",
     "analysis": {
-      "strategic_value": "極高 (伊斯蘭世界與南方國家敘事)",
-      "narrative_logic": "挑戰西方主流敘事的先鋒。對以色列政策、歐美軍事干預持強烈批評立場，是觀察伊斯蘭世界地緣邏輯的最佳窗口。",
-      "risk_indicator": "在涉及卡達核心利益（如與鄰國的天然氣競爭）時立場較為模糊。"
+      "strategic_value": "極高 (伊斯蘭世界與全球南方挑戰西方敘事的窗口)",
+      "narrative_logic": "挑戰西方媒體壟斷，推廣區域主義與反霸權敘事。"
     },
-    "links": {
-      "official_url": "https://www.aljazeera.com/",
-      "rss_feed": "https://www.aljazeera.com/xml/rss/all.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:38.833965Z"
-    }
+    "links": { "official_url": "https://www.aljazeera.com/" }
   },
   {
-    "media_name": "Arab News",
-    "geopolitical_block": "中東中樞 (沙烏地)",
-    "region": "中東",
-    "geographic_info": {
-      "continent": "Middle East",
-      "country_code": "SA"
-    },
-    "attributes": {
-      "media_type": "英文報刊",
-      "bias_index": "現代化、親沙國王室",
-      "funding_source": "沙烏地傳媒集團"
-    },
+    "media_name": "NHK World-Japan",
+    "region": "印太",
+    "funding_tag": "[政府資助/公共]",
+    "funding_details": "由日本政府透過《放送法》規定的收視費以及針對國際廣播的專項補助金運作。受總務省監管，但在日常編輯上具備高度自主權。",
     "analysis": {
-      "strategic_value": "中高 (能源大國的外交意志)",
-      "narrative_logic": "代表王儲 MBS 的 2030 願景，致力於將沙國塑造為現代化領導者。是觀察沙國在美、中之間切換權力平衡的窗口。",
-      "risk_indicator": "對沙國國內人權議題與皇室決策無任何負面報導。"
+      "strategic_value": "高 (日本印太戰略與美日同盟視角)",
+      "narrative_logic": "反映「自由開放的印太」戰略邏輯，重視國際法秩序。"
     },
-    "links": {
-      "official_url": "https://www.arabnews.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": false,
-      "http_code": 403,
-      "verified_at": "2026-03-17T17:00:38.985655Z"
-    }
+    "links": { "official_url": "https://www3.nhk.or.jp/nhkworld/" }
   },
   {
-    "media_name": "TRT World",
-    "geopolitical_block": "中東中樞 (土耳其)",
-    "region": "中東",
-    "geographic_info": {
-      "continent": "Europe/Asia",
-      "country_code": "TR"
-    },
-    "attributes": {
-      "media_type": "公共廣播對外頻道",
-      "bias_index": "新鄂圖曼主義、土耳其敘事",
-      "funding_source": "土耳其政府"
-    },
+    "media_name": "中央通訊社 (CNA)",
+    "region": "印太",
+    "funding_tag": "[國家官方]",
+    "funding_details": "依據《中央通訊社設置條例》，由中華民國政府出資並設立。為國家通訊社，其預算主要源於政府撥款與新聞服務收益。",
     "analysis": {
-      "strategic_value": "高 (北約側翼與歐亞橋樑動態)",
-      "narrative_logic": "反映艾爾段政府在烏俄調停、敘利亞問題及黑海安全中的野心。定位於西方與東方的中間代理人。",
-      "risk_indicator": "報導高度受土耳其國家安全政策驅動，對庫德族等議題具備強烈偏見。"
+      "strategic_value": "極高 (台海衝突前哨資訊與官方立場)",
+      "narrative_logic": "傳遞台灣在印太架構中的定位，維護台海現狀敘事。"
     },
-    "links": {
-      "official_url": "https://www.trtworld.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:39.178987Z"
-    }
+    "links": { "official_url": "https://www.cna.com.tw/" }
   },
   {
-    "media_name": "Tehran Times",
-    "geopolitical_block": "中東中樞 (伊朗)",
-    "region": "中東",
-    "geographic_info": {
-      "continent": "Middle East",
-      "country_code": "IR"
-    },
-    "attributes": {
-      "media_type": "國家資助英文報",
-      "bias_index": "反西方、抵抗之弧敘事",
-      "funding_source": "伊朗政府"
-    },
+    "media_name": "TASS (塔斯社)",
+    "region": "歐亞",
+    "funding_tag": "[國家官方]",
+    "funding_details": "俄羅斯國家通訊社，由俄羅斯聯邦政府完全掌控與撥款。是俄羅斯法律規定的官方資訊發布渠道。",
     "analysis": {
-      "strategic_value": "中 (觀察伊朗紅線與核協議立場)",
-      "narrative_logic": "伊朗伊斯蘭共和國對外的聲音。核心在於反對美國在該地區的軍事存在，並強調伊朗作為什葉派核心的領導地位。",
-      "risk_indicator": "內容屬於官方宣傳，資訊需經過嚴格的政治校驗。"
+      "strategic_value": "中 (觀測克里姆林宮的戰略紅線與最後通牒)",
+      "narrative_logic": "直接體現普丁政府的意志，在資訊戰中扮演戰術角色。"
     },
-    "links": {
-      "official_url": "https://www.tehrantimes.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": false,
-      "http_code": 404,
-      "verified_at": "2026-03-17T17:00:49.379115Z"
-    }
+    "links": { "official_url": "https://tass.com/" }
   },
   {
-    "media_name": "Haaretz (哈雷茲報)",
-    "geopolitical_block": "中東中樞 (以色列)",
-    "region": "中東",
-    "geographic_info": {
-      "continent": "Middle East",
-      "country_code": "IL"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "左翼、批判性強",
-      "funding_source": "哈雷茲集團"
-    },
-    "analysis": {
-      "strategic_value": "高 (以色列內部民主與政策辯論)",
-      "narrative_logic": "與以色列極右翼政權形成對比。對政府的軍事佔領與屯墾政策持嚴厲批評立場，是理解以色列社會裂痕的最佳指標。",
-      "risk_indicator": "在極度緊張的戰時，其報導可能受到軍事審查的壓力。"
-    },
-    "links": {
-      "official_url": "https://www.haaretz.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:49.577536Z"
-    }
-  },
-  {
-    "media_name": "Le Monde (世界報)",
-    "geopolitical_block": "歐盟大陸 (法國)",
-    "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "FR"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "中左派、戰略自主",
-      "funding_source": "讀者與投資基金"
-    },
-    "analysis": {
-      "strategic_value": "高 (法國外交與『歐洲主權』風向標)",
-      "narrative_logic": "反映法國對歐盟領導權的渴望。強調外交自主（不完全依賴美國），是觀察歐盟戰略自主邏輯的核心媒體。",
-      "risk_indicator": "具有較強的精英文化氣息，對非歐盟地區的報導帶有法式普世主義的優越感。"
-    },
-    "links": {
-      "official_url": "https://www.lemonde.fr/en/",
-      "rss_feed": "https://www.lemonde.fr/en/rss/full_external_main.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:49.870690Z"
-    }
-  },
-  {
-    "media_name": "Der Spiegel (明鏡週刊)",
-    "geopolitical_block": "歐盟大陸 (德國)",
-    "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "DE"
-    },
-    "attributes": {
-      "media_type": "週刊/新聞雜誌",
-      "bias_index": "左翼自由派、批判嚴謹",
-      "funding_source": "員工持股與出版社"
-    },
-    "analysis": {
-      "strategic_value": "高 (德國政壇與能源政策內幕)",
-      "narrative_logic": "以深度調查著稱。反映德國在烏俄戰爭後的「時代轉折」（Zeitenwende）及其在經濟依賴中國與安全依賴美國間的掙扎。",
-      "risk_indicator": "立場較為批判，對政府的政策瑕疵揭露毫不留情。"
-    },
-    "links": {
-      "official_url": "https://www.spiegel.de/international/",
-      "rss_feed": "https://www.spiegel.de/international/index.rss"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:51.951408Z"
-    }
-  },
-  {
-    "media_name": "El País",
-    "geopolitical_block": "歐盟大陸 (西班牙)",
-    "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "ES"
-    },
-    "attributes": {
-      "media_type": "日報",
-      "bias_index": "社會自由主義",
-      "funding_source": "Prisa 集團"
-    },
-    "analysis": {
-      "strategic_value": "中高 (連接歐洲與拉丁美洲的橋樑)",
-      "narrative_logic": "反映南歐國家在歐盟中的聲音，及其對拉丁美洲地緣政治的強大影響力。",
-      "risk_indicator": "報導受西班牙國內強烈的黨派鬥爭影響。"
-    },
-    "links": {
-      "official_url": "https://english.elpais.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:52.645693Z"
-    }
-  },
-  {
-    "media_name": "Politico Europe",
-    "geopolitical_block": "歐盟核心 (布魯塞爾)",
-    "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "BE"
-    },
-    "attributes": {
-      "media_type": "專業新聞機構",
-      "bias_index": "政策導向、極度敏銳",
-      "funding_source": "Axel Springer"
-    },
-    "analysis": {
-      "strategic_value": "極高 (歐盟官僚體系與法規預警)",
-      "narrative_logic": "專門報導布魯塞爾權力中心。對歐盟執委會（EC）的決策過程、對華貿易壁壘、碳稅政策具備全球第一的資訊速度。",
-      "risk_indicator": "具有美式新聞風格的激進感，有時會誇大歐盟內部的分裂。"
-    },
-    "links": {
-      "official_url": "https://www.politico.eu/",
-      "rss_feed": "https://www.politico.eu/feed"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:52.896998Z"
-    }
-  },
-  {
-    "media_name": "UN News (聯合國新聞)",
-    "geopolitical_block": "全球多邊體系",
+    "media_name": "Reuters (路透社)",
     "region": "全球",
-    "geographic_info": {
-      "continent": "Global",
-      "country_code": "UN"
-    },
-    "attributes": {
-      "media_type": "國際組織媒體",
-      "bias_index": "多邊主義、人道主義",
-      "funding_source": "各成員國分攤"
-    },
+    "funding_tag": "[私營/商業]",
+    "funding_details": "隸屬於湯森路透集團 (Thomson Reuters)。資金來源於金融終端服務與全球媒體訂閱。其「信託原則」確保其報導不受單一政府或利益集團干預。",
     "analysis": {
-      "strategic_value": "中 (觀察全球法律與規範框架)",
-      "narrative_logic": "形式上的中立。其報導反映了大國在聯合國框架下博弈的結果，主要專注於氣候、飢餓與難民議題。",
-      "risk_indicator": "在涉及大國實質主權衝突時，缺乏實質強制力與分析深度。"
+      "strategic_value": "最高 (全球金融與地緣情報基準)",
+      "narrative_logic": "數據導向、去意識形態化，追求極致的事實準確與速度。"
     },
-    "links": {
-      "official_url": "https://news.un.org/zh/",
-      "rss_feed": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml"
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:53.592859Z"
-    }
+    "links": { "official_url": "https://www.reuters.com/" }
   },
   {
-    "media_name": "Mail & Guardian",
-    "geopolitical_block": "BRICS+ (南非)",
-    "region": "BRICS+",
-    "geographic_info": {
-      "continent": "Africa",
-      "country_code": "ZA"
-    },
-    "attributes": {
-      "media_type": "私營週報",
-      "bias_index": "自由左翼、反腐敗",
-      "funding_source": "M&G Media"
-    },
+    "media_name": "Wall Street Journal (華爾街日報)",
+    "region": "北美",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "由道瓊斯公司 (Dow Jones) 擁有，最終母公司為魯伯特·梅鐸的新聞集團 (News Corp)。以商業訂閱為核心盈利模式。",
     "analysis": {
-      "strategic_value": "高 (非洲大陸與南半球領導權觀察)",
-      "narrative_logic": "南非作為「非洲之聲」的代表，其在金磚國家中的作用以及對西方金融秩序的批判具備參考價值。",
-      "risk_indicator": "高度關注國內政治醜聞，有時會掩蓋地緣戰略分析。"
+      "strategic_value": "極高 (全球貿易、資本政策與美國保守派動向)",
+      "narrative_logic": "代表華爾街資本與共和黨建制派觀點，對經濟政策極具預判價值。"
     },
-    "links": {
-      "official_url": "https://mg.co.za/",
-      "rss_feed": ""
+    "links": { "official_url": "https://www.wsj.com/" }
+  },
+  {
+    "media_name": "Bloomberg News (彭博社)",
+    "region": "北美",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "由邁克爾·彭博私人擁有的彭博有限合夥企業 (Bloomberg L.P.) 運營。主要利潤來自彭博終端機的數據服務。",
+    "analysis": {
+      "strategic_value": "最高 (判斷地緣風險對金融市場的衝擊)",
+      "narrative_logic": "從資本回報與穩定性角度出發，對制裁與宏觀政策高度敏銳。"
     },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:55.301859Z"
-    }
+    "links": { "official_url": "https://www.bloomberg.com/" }
   },
   {
     "media_name": "聯合早報 (Lianhe Zaobao)",
-    "geopolitical_block": "印太戰略 (新加坡)",
     "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "SG"
-    },
-    "attributes": {
-      "media_type": "主流日報",
-      "bias_index": "中立平衡、冷靜務實",
-      "funding_source": "新報業媒體 (SPH)"
-    },
+    "funding_tag": "[私營/受監管]",
+    "funding_details": "隸屬於新報業媒體 (SPH Media Trust)。雖然是私營機構，但在新加坡媒體環境下，其與政府立場保持高度一致，且接受一定程度的公共信託資金。",
     "analysis": {
-      "strategic_value": "極高 (美中博弈的第三方緩衝區視角)",
-      "narrative_logic": "新加坡「小國大外交」的縮影。提供具備專業水平的中國觀察，同時在西方與東方敘事間尋求平衡點。是觀察華人世界最成熟的理智聲音。",
-      "risk_indicator": "為維持外交平衡，在極度敏感的議題上立場高度謹慎。"
+      "strategic_value": "極高 (美中對抗下的第三方理智緩衝視角)",
+      "narrative_logic": "提供專業的中立敘事，反映小國在大國博弈中的平衡藝術。"
     },
-    "links": {
-      "official_url": "https://www.zaobao.com.sg/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:55.534453Z"
-    }
+    "links": { "official_url": "https://www.zaobao.com.sg/" }
   },
   {
-    "media_name": "Tuoi Tre News (青年報)",
-    "geopolitical_block": "東南亞戰略 (越南)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "VN"
-    },
-    "attributes": {
-      "media_type": "半官方媒體",
-      "bias_index": "國家主義、經濟導向",
-      "funding_source": "越南青年聯合會"
-    },
+    "media_name": "The Hindu (印度教徒報)",
+    "region": "南亞",
+    "funding_tag": "[私營/家族所有]",
+    "funding_details": "由印度 Kasturi & Sons 家族私人擁有。是印度歷史最悠久、最具影響力的民營報紙之一。",
     "analysis": {
-      "strategic_value": "中高 (全球供應鏈轉移至越南的實況)",
-      "narrative_logic": "反映越南在南海議題上的強硬主權立場，以及其作為「竹子外交」實踐者在美中歐三方間獲利的意圖。",
-      "risk_indicator": "受越南共產黨媒體審查影響，政治批判空間極小。"
+      "strategic_value": "高 (印度崛起與不結盟戰略深度分析)",
+      "narrative_logic": "反映印度戰略自主與「南方國家」領導權的邏輯。"
     },
-    "links": {
-      "official_url": "https://tuoitrenews.vn/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:57.652606Z"
-    }
+    "links": { "official_url": "https://www.thehindu.com/" }
   },
   {
-    "media_name": "Jakarta Post",
-    "geopolitical_block": "東南亞戰略 (印尼)",
-    "region": "印太",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "ID"
-    },
-    "attributes": {
-      "media_type": "英文日報",
-      "bias_index": "自由、區域主義",
-      "funding_source": "私營媒體集團"
-    },
-    "analysis": {
-      "strategic_value": "中 (觀察東協龍頭與鎳礦政治)",
-      "narrative_logic": "印尼作為 G20 成員與東協領導者的觀點。強調印尼的非結盟立場，及其在關鍵礦產供應鏈上的權力運作。",
-      "risk_indicator": "報導立場偏向自由派，有時與印尼國內的保守勢力產生衝突。"
-    },
-    "links": {
-      "official_url": "https://www.thejakartapost.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:58.341028Z"
-    }
-  },
-  {
-    "media_name": "Corriere della Sera",
-    "geopolitical_block": "歐盟大陸 (義大利)",
+    "media_name": "Le Monde (世界報)",
     "region": "歐洲",
-    "geographic_info": {
-      "continent": "Europe",
-      "country_code": "IT"
-    },
-    "attributes": {
-      "media_type": "私營報紙",
-      "bias_index": "建制派、溫和保守",
-      "funding_source": "RCS MediaGroup"
-    },
+    "funding_tag": "[私營/讀者所有]",
+    "funding_details": "由讀者小組、員工持股與投資基金共同控制。資金來源於訂閱、贊助與歐盟相關項目的補助金。",
     "analysis": {
-      "strategic_value": "中 (觀察南歐與地中海安全議題)",
-      "narrative_logic": "義大利最具公信力的報刊。反映義大利在歐盟財政政策、北非難民與地中海主權議題上的核心利益。",
-      "risk_indicator": "受義大利政壇頻繁更迭影響，其報導立場可能隨政府色彩變動。"
+      "strategic_value": "高 (法國外交與「歐盟自主」的智力標竿)",
+      "narrative_logic": "反映法國對歐洲主權的追求，不完全依賴美式邏輯。"
     },
-    "links": {
-      "official_url": "https://www.corriere.it/",
-      "rss_feed": ""
+    "links": { "official_url": "https://www.lemonde.fr/en/" }
+  },
+  {
+    "media_name": "Politico Europe",
+    "region": "歐洲",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "由德國出版巨頭 Axel Springer 收購。資金來源於高端政策簡報訂閱與商業贊助。",
+    "analysis": {
+      "strategic_value": "極高 (歐盟布魯塞爾官僚決策的內部消息)",
+      "narrative_logic": "極度關注政策法規細節，是觀察歐盟對外貿易壁壘的核心。"
     },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:00:58.789166Z"
-    }
+    "links": { "official_url": "https://www.politico.eu/" }
+  },
+  {
+    "media_name": "UN News (聯合國新聞)",
+    "region": "全球",
+    "funding_tag": "[國家官方/多邊資助]",
+    "funding_details": "聯合國秘書處全球傳播部下屬機構。由所有成員國按比例攤派預算。其敘事受到聯合國憲章與多方成員國的政治約束。",
+    "analysis": {
+      "strategic_value": "中 (觀察全球法律框架與國際共識的演變)",
+      "narrative_logic": "維持形式中立，聚焦人道主義與多邊主義議程。"
+    },
+    "links": { "official_url": "https://news.un.org/zh/" }
+  },
+  {
+    "media_name": "Foreign Affairs (外交事務)",
+    "region": "北美",
+    "funding_tag": "[私營/智庫]",
+    "funding_details": "由外交關係協會 (CFR) 出版。雖然非官方機構，但其理事會成員包含大量現任與前任政府官員與金融巨頭。資金來自捐贈與專業訂閱。",
+    "analysis": {
+      "strategic_value": "極高 (預判美國全球戰略的長期藍圖)",
+      "narrative_logic": "頂級精英的政策辯論平台，往往是美國外交轉向的前奏。"
+    },
+    "links": { "official_url": "https://www.foreignaffairs.com/" }
+  },
+  {
+    "media_name": "The Economist (經濟學人)",
+    "region": "歐洲",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "由包括阿涅利家族、羅斯柴爾德家族在內的私人股東擁有。以高品質訂閱收入為主要支撐。",
+    "analysis": {
+      "strategic_value": "高 (全球自由貿易、全球化與西方建制派立場)",
+      "narrative_logic": "支持自由市場，反對民粹主義。是跨國精英的必讀刊物。"
+    },
+    "links": { "official_url": "https://www.economist.com/" }
+  },
+  {
+    "media_name": "Der Spiegel (明鏡週刊)",
+    "region": "歐洲",
+    "funding_tag": "[私營/員工所有]",
+    "funding_details": "特點是 50.5% 的股權由員工持有，其餘由出版社持有。具備極強的財務與編輯獨立性。",
+    "analysis": {
+      "strategic_value": "高 (德國政治權力運作與歐洲能源政策深度調查)",
+      "narrative_logic": "反映德國左翼自由派觀點，對權力具備高度批判性。"
+    },
+    "links": { "official_url": "https://www.spiegel.de/international/" }
+  },
+  {
+    "media_name": "Yonhap (韓聯社)",
+    "region": "印太",
+    "funding_tag": "[國家官方]",
+    "funding_details": "韓國國家通訊社。根據《新聞通訊振興法》，政府提供財務資助並購買其新聞服務，受韓國政府高度指導。",
+    "analysis": {
+      "strategic_value": "高 (朝鮮半島危機與南韓安保動態)",
+      "narrative_logic": "傳達首爾官方立場，是觀察南北韓關係演變的第一手來源。"
+    },
+    "links": { "official_url": "https://en.yna.co.kr/" }
   },
   {
     "media_name": "Al-Ahram (金字塔報)",
-    "geopolitical_block": "中東中樞 (埃及)",
     "region": "中東",
-    "geographic_info": {
-      "continent": "Africa/Middle East",
-      "country_code": "EG"
-    },
-    "attributes": {
-      "media_type": "國家報刊",
-      "bias_index": "官方保守、穩定導向",
-      "funding_source": "埃及政府"
-    },
+    "funding_tag": "[國家官方]",
+    "funding_details": "埃及政府完全掌控。是阿拉伯世界歷史最悠久的官營媒體，預算完全納入國家體系。",
     "analysis": {
-      "strategic_value": "中 (觀察蘇伊士運河與阿拉伯世界傳統強權)",
-      "narrative_logic": "阿拉伯世界歷史最悠久的報紙。代表埃及軍政府的立場，是觀察蘇伊士運河安全與中東傳統秩序維持的指標。",
-      "risk_indicator": "屬於政府喉舌，對國內異議與經濟危機報導受限。"
+      "strategic_value": "中 (觀察蘇伊士運河主權與北非地緣秩序)",
+      "narrative_logic": "反映埃及軍政府意圖，支持傳統區域權力平衡。"
     },
-    "links": {
-      "official_url": "https://english.ahram.org.eg/",
-      "rss_feed": ""
+    "links": { "official_url": "https://english.ahram.org.eg/" }
+  },
+  {
+    "media_name": "Folha de S.Paulo",
+    "region": "南美",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "巴西最大的私營報紙，由 Frias 家族透過 Grupo Folha 持有。",
+    "analysis": {
+      "strategic_value": "中 (金磚國家中巴西的政策擺動)",
+      "narrative_logic": "反映拉美大國在美、中博弈中的實用主義立場。"
     },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T17:01:03.736395Z"
-    }
+    "links": { "official_url": "https://www.folha.uol.com.br/" }
+  },
+  {
+    "media_name": "ABC News (澳洲廣播公司)",
+    "region": "印太",
+    "funding_tag": "[政府資助/公共]",
+    "funding_details": "澳洲國家廣播機構，100% 由聯邦政府撥款。雖受政府資助，但根據《ABC 法案》擁有編輯獨立性。",
+    "analysis": {
+      "strategic_value": "高 (AUKUS 協議與南太平洋島國外交競爭)",
+      "narrative_logic": "反映澳洲作為五眼聯盟側翼在印太地區的安全焦慮與動作。"
+    },
+    "links": { "official_url": "https://www.abc.net.au/news" }
+  },
+  {
+    "media_name": "TRT World",
+    "region": "中東",
+    "funding_tag": "[國家官方]",
+    "funding_details": "土耳其國家廣播電視台 (TRT) 的國際頻道。由土耳其政府完全撥款，反映艾爾段政府的意識形態。",
+    "analysis": {
+      "strategic_value": "高 (觀察土耳其在北約與歐亞橋樑間的擺動)",
+      "narrative_logic": "推廣「新鄂圖曼主義」，支持土耳其作為區域強權的影響力。"
+    },
+    "links": { "official_url": "https://www.trtworld.com/" }
+  },
+  {
+    "media_name": "South China Morning Post (南華早報)",
+    "region": "印太",
+    "funding_tag": "[私營/資本所有]",
+    "funding_details": "目前由阿里巴巴集團 (Alibaba Group) 全資擁有。其資金背景與中國民營科技巨頭密切相關，運作受香港法律監管。",
+    "analysis": {
+      "strategic_value": "高 (理解中國立場與西方視角對接的窗口)",
+      "narrative_logic": "在紅線邊緣提供深度報導，反映中國精英與世界的對話。"
+    },
+    "links": { "official_url": "https://www.scmp.com/" }
+  },
+  {
+    "media_name": "RT (Russia Today)",
+    "region": "歐亞",
+    "funding_tag": "[國家官方]",
+    "funding_details": "由俄羅斯聯邦政府直接撥款。其全球網絡旨在消解西方媒體公信力並推廣克里姆林宮敘事。",
+    "analysis": {
+      "strategic_value": "低至中 (研究俄羅斯對外資訊戰與反西方論調)",
+      "narrative_logic": "主動進攻性敘事，利用西方內部分裂進行宣傳。"
+    },
+    "links": { "official_url": "https://www.rt.com/" }
+  },
+  {
+    "media_name": "Tehran Times",
+    "region": "中東",
+    "funding_tag": "[國家官方]",
+    "funding_details": "由伊朗伊斯蘭發展傳播組織控制，資金完全源於政府。",
+    "analysis": {
+      "strategic_value": "中 (觀察伊朗「抵抗之弧」的戰略紅線)",
+      "narrative_logic": "反映什葉派核心權力的對外強硬立場。"
+    },
+    "links": { "official_url": "https://www.tehrantimes.com/" }
+  },
+  {
+    "media_name": "The Guardian (衛報)",
+    "region": "歐洲",
+    "funding_tag": "[私營/信託所有]",
+    "funding_details": "由斯考特信託 (Scott Trust Limited) 持有，確保媒體不被個人或企業收購。資金主要源於全球讀者捐贈。",
+    "analysis": {
+      "strategic_value": "中高 (全球環境保護、人權與左翼進步派議程)",
+      "narrative_logic": "對權力持強烈懷疑態度，支持公民權利與氣候行動。"
+    },
+    "links": { "official_url": "https://www.theguardian.com/world" }
+  },
+  {
+    "media_name": "Caixin (財新網)",
+    "region": "歐亞",
+    "funding_tag": "[私營/專業財經]",
+    "funding_details": "由資深媒體人胡舒立創辦，資金來自國內外機構投資者與高端訂閱用戶。具備較強的專業技術官僚背景。",
+    "analysis": {
+      "strategic_value": "高 (中國國內金融風險與技術官僚思維)",
+      "narrative_logic": "在有限空間內提供最真實的中國經濟數據調查。"
+    },
+    "links": { "official_url": "https://www.caixin.com/" }
+  },
+  {
+    "media_name": "Arab News",
+    "region": "中東",
+    "funding_tag": "[私營/政府背景]",
+    "funding_details": "隸屬於沙烏地研究與傳媒集團 (SRMG)，背後有沙國皇室成員控制。資金與政府政策高度掛鉤。",
+    "analysis": {
+      "strategic_value": "中高 (沙國王儲現代化改革與能源政治)",
+      "narrative_logic": "展示沙烏地作為全球現代化世俗國家的轉向。"
+    },
+    "links": { "official_url": "https://www.arabnews.com/" }
+  },
+  {
+    "media_name": "Haaretz (哈雷茲報)",
+    "region": "中東",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "以色列歷史最悠久的私人報紙，對政府持高度批判立場，資金來自訂閱與廣告。",
+    "analysis": {
+      "strategic_value": "高 (觀察以色列內部社會分裂與極右政權紅線)",
+      "narrative_logic": "代表以色列自由派，反對擴大定居點與宗教極端主義。"
+    },
+    "links": { "official_url": "https://www.haaretz.com/" }
+  },
+  {
+    "media_name": "Mail & Guardian",
+    "region": "非洲",
+    "funding_tag": "[私營/獨立]",
+    "funding_details": "南非獨立報紙，以揭露南非國內與非洲大陸腐敗聞名。",
+    "analysis": {
+      "strategic_value": "中高 (觀察「全球南方」領導權競爭與南非立場)",
+      "narrative_logic": "反映非洲大陸對現有國際秩序的批判性思考。"
+    },
+    "links": { "official_url": "https://mg.co.za/" }
+  },
+  {
+    "media_name": "Tuoi Tre News",
+    "region": "印太",
+    "funding_tag": "[國家官方]",
+    "funding_details": "由越南胡志明共產主義青年聯合會管轄，屬半官方性質。受越南政府審查。",
+    "analysis": {
+      "strategic_value": "中 (越南供應鏈地位與南海領土主張)",
+      "narrative_logic": "反映越南在美、中兩強間的「竹子外交」與國族利益。"
+    },
+    "links": { "official_url": "https://tuoitrenews.vn/" }
+  },
+  {
+    "media_name": "Jakarta Post",
+    "region": "印太",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "由印尼四家相互競爭的新聞機構聯合創辦，是印尼最具國際公信力的英文媒體。",
+    "analysis": {
+      "strategic_value": "中 (觀察東協龍頭印尼在資源出口與地緣的中立地位)",
+      "narrative_logic": "體現印尼「不結盟」與「互利」的外交哲學。"
+    },
+    "links": { "official_url": "https://www.thejakartapost.com/" }
+  },
+  {
+    "media_name": "Corriere della Sera",
+    "region": "歐洲",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "義大利最具權威的私人日報。資金源於 RCS MediaGroup。",
+    "analysis": {
+      "strategic_value": "中 (地中海安全與歐盟財政政策變遷)",
+      "narrative_logic": "反映南歐國家在歐盟框架內的集體利益。"
+    },
+    "links": { "official_url": "https://www.corriere.it/" }
+  },
+  {
+    "media_name": "El País",
+    "region": "歐洲",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "西班牙第一大報，由 Prisa 集團持有。具備廣泛的西語世界影響力。",
+    "analysis": {
+      "strategic_value": "中高 (連接歐洲與拉美政治的敘事橋樑)",
+      "narrative_logic": "反映西班牙在歐盟與西語圈的多邊影響力。"
+    },
+    "links": { "official_url": "https://english.elpais.com/" }
+  },
+  {
+    "media_name": "Global Times (環球時報)",
+    "region": "歐亞",
+    "funding_tag": "[國家官方]",
+    "funding_details": "隸屬於人民日報社。作為中國官方的「進攻性」宣傳窗口，預算完全納入官媒體系。",
+    "analysis": {
+      "strategic_value": "中 (判斷中國民族主義情緒與非正式外交紅線)",
+      "narrative_logic": "以更激進的語氣傳達官方不便直接說明的強硬意圖。"
+    },
+    "links": { "official_url": "https://www.globaltimes.cn/" }
+  },
+  {
+    "media_name": "Nikkei Asia (日經亞洲)",
+    "region": "印太",
+    "funding_tag": "[私營/專業財經]",
+    "funding_details": "由日本經濟新聞社營運，完全民營。專注於亞洲跨國供應鏈與科技戰爭。",
+    "analysis": {
+      "strategic_value": "極高 (掌握亞洲半導體與高科技競爭實況)",
+      "narrative_logic": "以商業視角剖析亞洲地緣風險，是產業決策者的關鍵情報。"
+    },
+    "links": { "official_url": "https://asia.nikkei.com/" }
+  },
+  {
+    "media_name": "Times of India",
+    "region": "南亞",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "全球發行量最大的英文日報。由 Bennett, Coleman & Co. 擁有。",
+    "analysis": {
+      "strategic_value": "中 (觀察印度民粹主義與龐大中產階級傾向)",
+      "narrative_logic": "反映印度崛起的民族自豪感與商業野心。"
+    },
+    "links": { "official_url": "https://timesofindia.indiatimes.com/" }
+  },
+  {
+    "media_name": "Sydney Morning Herald",
+    "region": "印太",
+    "funding_tag": "[私營/商業]",
+    "funding_details": "隸屬於 Nine Entertainment 集團。是澳洲最古老的獨立媒體之一。",
+    "analysis": {
+      "strategic_value": "中 (澳洲在對華貿易與美澳安保間的掙扎)",
+      "narrative_logic": "反映澳洲商業精英對印太安全局勢的務實判斷。"
+    },
+    "links": { "official_url": "https://www.smh.com.au/" }
+  },
+  {
+    "media_name": "Financial Times (金融時報)",
+    "region": "全球",
+    "funding_tag": "[私營/專業財經]",
+    "funding_details": "目前由日本經濟新聞社全資擁有。資金源於全球高端商業訂閱。",
+    "analysis": {
+      "strategic_value": "極高 (判斷全球主要大國的財政政策與制裁路徑)",
+      "narrative_logic": "古典自由主義視角，關注市場規則與地緣穩定的博弈。"
+    },
+    "links": { "official_url": "https://www.ft.com/" }
   }
 ]
