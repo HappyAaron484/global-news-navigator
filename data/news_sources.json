@@ -2,47 +2,19 @@
   {
     "media_name": "NHK World",
     "geopolitical_block": "第一島鏈",
-    "geographic_info": {
-      "continent": "Asia",
-      "country_code": "JP"
-    },
-    "attributes": {
-      "media_type": "官媒",
-      "bias_index": "中立穩健",
-      "funding_source": "政府與收視費"
-    },
-    "realist_note": "日本外交之聲，反映印太戰略下「美日同盟」的穩定觀點。",
-    "links": {
-      "official_url": "https://www3.nhk.or.jp/nhkworld/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-03-17T16:21:50.837610Z"
-    }
+    "geographic_info": { "continent": "Asia", "country_code": "JP" },
+    "attributes": { "media_type": "官媒", "bias_index": "中立", "funding_source": "政府" },
+    "realist_note": "反映印太戰略下美日同盟的穩定觀點。",
+    "links": { "official_url": "https://www3.nhk.or.jp/nhkworld/", "rss_feed": "" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
   },
   {
     "media_name": "Reuters 路透社",
     "geopolitical_block": "歐美核心",
-    "geographic_info": {
-      "continent": "Global",
-      "country_code": "GB"
-    },
-    "attributes": {
-      "media_type": "通訊社",
-      "bias_index": "中立客觀",
-      "funding_source": "湯森路透"
-    },
-    "realist_note": "全球金融基準，報導受跨國資本市場影響，採非道德化的數據敘事。",
-    "links": {
-      "official_url": "https://www.reuters.com/",
-      "rss_feed": ""
-    },
-    "status": {
-      "is_live": false,
-      "http_code": 401,
-      "verified_at": "2026-03-17T16:21:51.117772Z"
-    }
+    "geographic_info": { "continent": "Global", "country_code": "GB" },
+    "attributes": { "media_type": "通訊社", "bias_index": "中立", "funding_source": "湯森路透" },
+    "realist_note": "全球金融基準，採非道德化的數據敘事。",
+    "links": { "official_url": "https://www.reuters.com/", "rss_feed": "" },
+    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
   }
 ]
