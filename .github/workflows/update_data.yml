@@ -2,21 +2,27 @@ name: Global News Auto-Maintenance & Deploy
 
 on:
   schedule:
-    - cron: '0 4 * * *' # 每日中午 12:00 (台北時間)
+    - cron: '0 4 * * *' # 每日 UTC 04:00 (台灣中午 12 點)
   workflow_dispatch: # 允許手動執行
 
-# 設定權限以允許部署到 GitHub Pages
+# 3W 標註: Who: Senior Analyst / Where: GitHub Workflow / When: 2026-03-18
 permissions:
   contents: write
   pages: write
   id-token: write
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # 強制啟用 Node.js 24 環境
 
 jobs:
   build-and-deploy:
+    # 這是修復 400 錯誤的關鍵：必須宣告環境名稱
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -46,7 +52,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # 部署整個根目錄 (包含 index.html 和 data/)
+          path: '.' # 部署根目錄下的所有靜態檔案
 
       - name: Deploy to GitHub Pages
         id: deployment
