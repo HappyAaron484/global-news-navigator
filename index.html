@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球新聞導航 - 實戰運作版</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .card { border: none; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .realist-note { background: #eef2f3; padding: 12px; border-radius: 8px; font-size: 0.9rem; color: #444; border-left: 5px solid #0d6efd; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4 shadow">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">🌐 全球新聞導航系統</span>
+        </div>
+    </nav>
+
+    <div class="container py-3">
+        <div id="status-msg" class="alert alert-info">系統正在從數據庫抓取地緣政治情報...</div>
+        <div id="news-container" class="row"></div>
+    </div>
+
+    <script>
+        async function init() {
+            const container = document.getElementById('news-container');
+            const statusMsg = document.getElementById('status-msg');
+            
+            try {
+                // 重點：當 index.html 在根目錄時，路徑就是 data/news_sources.json
+                const response = await fetch('data/news_sources.json?v=' + Date.now());
+                
+                if (!response.ok) throw new Error('找不到數據庫檔案 (HTTP ' + response.status + ')');
+                
+                const data = await response.json();
+                statusMsg.style.display = 'none';
+
+                let html = '';
+                data.forEach(item => {
+                    html += `
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title fw-bold text-primary">${item.media_name}</h5>
+                                        <span class="badge bg-secondary">${item.geopolitical_block}</span>
+                                    </div>
+                                    <p class="text-muted small">${item.geographic_info.continent} (${item.geographic_info.country_code})</p>
+                                    <div class="realist-note mb-3"><strong>現實主義評註：</strong><br>${item.realist_note}</div>
+                                    <a href="${item.links.official_url}" target="_blank" class="btn btn-outline-dark btn-sm">開啟媒體源</a>
+                                </div>
+                                <div class="card-footer bg-white border-0 text-muted small">
+                                    最後校驗：${new Date(item.status.verified_at).toLocaleString('zh-TW')}
+                                </div>
+                            </div>
+                        </div>`;
+                });
+                container.innerHTML = html;
+            } catch (err) {
+                statusMsg.className = 'alert alert-danger';
+                statusMsg.innerText = '⚠️ 載入失敗：' + err.message + '。請確保 data/news_sources.json 格式正確。';
+            }
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>
