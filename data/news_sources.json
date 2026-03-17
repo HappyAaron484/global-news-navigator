@@ -8,7 +8,14 @@
       "strategic_value": "極高 (美國自由派精英意識形態指標)",
       "narrative_logic": "反映美國自由主義建制派觀點。其敘事高度影響國際人權與民主議程。"
     },
-    "links": { "official_url": "https://www.nytimes.com/" }
+    "links": {
+      "official_url": "https://www.nytimes.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:43.647044Z"
+    }
   },
   {
     "media_name": "BBC News (英國廣播公司)",
@@ -19,7 +26,14 @@
       "strategic_value": "極高 (全球議題設置與區域衝突深度調研)",
       "narrative_logic": "反映大英國協與西方普世價值，採取相對中立但帶有自由主義傾向的敘事。"
     },
-    "links": { "official_url": "https://www.bbc.com/news" }
+    "links": {
+      "official_url": "https://www.bbc.com/news"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:43.828143Z"
+    }
   },
   {
     "media_name": "人民日報海外版",
@@ -30,7 +44,14 @@
       "strategic_value": "中高 (判斷中國官方對外定調與政治紅線)",
       "narrative_logic": "完全反映國家意志。其辭彙的使用嚴格對標中央政治局的戰略導向。"
     },
-    "links": { "official_url": "http://paper.people.com.cn/rmrbhwb/" }
+    "links": {
+      "official_url": "http://paper.people.com.cn/rmrbhwb/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:45.482008Z"
+    }
   },
   {
     "media_name": "Al Jazeera (半島電視台)",
@@ -41,7 +62,14 @@
       "strategic_value": "極高 (伊斯蘭世界與全球南方挑戰西方敘事的窗口)",
       "narrative_logic": "挑戰西方媒體壟斷，推廣區域主義與反霸權敘事。"
     },
-    "links": { "official_url": "https://www.aljazeera.com/" }
+    "links": {
+      "official_url": "https://www.aljazeera.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:45.783361Z"
+    }
   },
   {
     "media_name": "NHK World-Japan",
@@ -52,7 +80,14 @@
       "strategic_value": "高 (日本印太戰略與美日同盟視角)",
       "narrative_logic": "反映「自由開放的印太」戰略邏輯，重視國際法秩序。"
     },
-    "links": { "official_url": "https://www3.nhk.or.jp/nhkworld/" }
+    "links": {
+      "official_url": "https://www3.nhk.or.jp/nhkworld/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:46.549982Z"
+    }
   },
   {
     "media_name": "中央通訊社 (CNA)",
@@ -63,7 +98,14 @@
       "strategic_value": "極高 (台海衝突前哨資訊與官方立場)",
       "narrative_logic": "傳遞台灣在印太架構中的定位，維護台海現狀敘事。"
     },
-    "links": { "official_url": "https://www.cna.com.tw/" }
+    "links": {
+      "official_url": "https://www.cna.com.tw/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:46.813212Z"
+    }
   },
   {
     "media_name": "TASS (塔斯社)",
@@ -74,7 +116,14 @@
       "strategic_value": "中 (觀測克里姆林宮的戰略紅線與最後通牒)",
       "narrative_logic": "直接體現普丁政府的意志，在資訊戰中扮演戰術角色。"
     },
-    "links": { "official_url": "https://tass.com/" }
+    "links": {
+      "official_url": "https://tass.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:47.483379Z"
+    }
   },
   {
     "media_name": "Reuters (路透社)",
@@ -85,7 +134,14 @@
       "strategic_value": "最高 (全球金融與地緣情報基準)",
       "narrative_logic": "數據導向、去意識形態化，追求極致的事實準確與速度。"
     },
-    "links": { "official_url": "https://www.reuters.com/" }
+    "links": {
+      "official_url": "https://www.reuters.com/"
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 401,
+      "verified_at": "2026-03-17T17:08:47.726106Z"
+    }
   },
   {
     "media_name": "Wall Street Journal (華爾街日報)",
@@ -96,7 +152,14 @@
       "strategic_value": "極高 (全球貿易、資本政策與美國保守派動向)",
       "narrative_logic": "代表華爾街資本與共和黨建制派觀點，對經濟政策極具預判價值。"
     },
-    "links": { "official_url": "https://www.wsj.com/" }
+    "links": {
+      "official_url": "https://www.wsj.com/"
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 401,
+      "verified_at": "2026-03-17T17:08:47.871795Z"
+    }
   },
   {
     "media_name": "Bloomberg News (彭博社)",
@@ -107,7 +170,14 @@
       "strategic_value": "最高 (判斷地緣風險對金融市場的衝擊)",
       "narrative_logic": "從資本回報與穩定性角度出發，對制裁與宏觀政策高度敏銳。"
     },
-    "links": { "official_url": "https://www.bloomberg.com/" }
+    "links": {
+      "official_url": "https://www.bloomberg.com/"
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 403,
+      "verified_at": "2026-03-17T17:08:48.028739Z"
+    }
   },
   {
     "media_name": "聯合早報 (Lianhe Zaobao)",
@@ -118,7 +188,14 @@
       "strategic_value": "極高 (美中對抗下的第三方理智緩衝視角)",
       "narrative_logic": "提供專業的中立敘事，反映小國在大國博弈中的平衡藝術。"
     },
-    "links": { "official_url": "https://www.zaobao.com.sg/" }
+    "links": {
+      "official_url": "https://www.zaobao.com.sg/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:48.171961Z"
+    }
   },
   {
     "media_name": "The Hindu (印度教徒報)",
@@ -129,7 +206,14 @@
       "strategic_value": "高 (印度崛起與不結盟戰略深度分析)",
       "narrative_logic": "反映印度戰略自主與「南方國家」領導權的邏輯。"
     },
-    "links": { "official_url": "https://www.thehindu.com/" }
+    "links": {
+      "official_url": "https://www.thehindu.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:48.539249Z"
+    }
   },
   {
     "media_name": "Le Monde (世界報)",
@@ -140,7 +224,14 @@
       "strategic_value": "高 (法國外交與「歐盟自主」的智力標竿)",
       "narrative_logic": "反映法國對歐洲主權的追求，不完全依賴美式邏輯。"
     },
-    "links": { "official_url": "https://www.lemonde.fr/en/" }
+    "links": {
+      "official_url": "https://www.lemonde.fr/en/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:48.807293Z"
+    }
   },
   {
     "media_name": "Politico Europe",
@@ -151,7 +242,14 @@
       "strategic_value": "極高 (歐盟布魯塞爾官僚決策的內部消息)",
       "narrative_logic": "極度關注政策法規細節，是觀察歐盟對外貿易壁壘的核心。"
     },
-    "links": { "official_url": "https://www.politico.eu/" }
+    "links": {
+      "official_url": "https://www.politico.eu/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:48.923313Z"
+    }
   },
   {
     "media_name": "UN News (聯合國新聞)",
@@ -162,7 +260,14 @@
       "strategic_value": "中 (觀察全球法律框架與國際共識的演變)",
       "narrative_logic": "維持形式中立，聚焦人道主義與多邊主義議程。"
     },
-    "links": { "official_url": "https://news.un.org/zh/" }
+    "links": {
+      "official_url": "https://news.un.org/zh/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:49.069763Z"
+    }
   },
   {
     "media_name": "Foreign Affairs (外交事務)",
@@ -173,7 +278,14 @@
       "strategic_value": "極高 (預判美國全球戰略的長期藍圖)",
       "narrative_logic": "頂級精英的政策辯論平台，往往是美國外交轉向的前奏。"
     },
-    "links": { "official_url": "https://www.foreignaffairs.com/" }
+    "links": {
+      "official_url": "https://www.foreignaffairs.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:49.217138Z"
+    }
   },
   {
     "media_name": "The Economist (經濟學人)",
@@ -184,7 +296,14 @@
       "strategic_value": "高 (全球自由貿易、全球化與西方建制派立場)",
       "narrative_logic": "支持自由市場，反對民粹主義。是跨國精英的必讀刊物。"
     },
-    "links": { "official_url": "https://www.economist.com/" }
+    "links": {
+      "official_url": "https://www.economist.com/"
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 403,
+      "verified_at": "2026-03-17T17:08:49.387490Z"
+    }
   },
   {
     "media_name": "Der Spiegel (明鏡週刊)",
@@ -195,7 +314,14 @@
       "strategic_value": "高 (德國政治權力運作與歐洲能源政策深度調查)",
       "narrative_logic": "反映德國左翼自由派觀點，對權力具備高度批判性。"
     },
-    "links": { "official_url": "https://www.spiegel.de/international/" }
+    "links": {
+      "official_url": "https://www.spiegel.de/international/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:50.299346Z"
+    }
   },
   {
     "media_name": "Yonhap (韓聯社)",
@@ -206,7 +332,14 @@
       "strategic_value": "高 (朝鮮半島危機與南韓安保動態)",
       "narrative_logic": "傳達首爾官方立場，是觀察南北韓關係演變的第一手來源。"
     },
-    "links": { "official_url": "https://en.yna.co.kr/" }
+    "links": {
+      "official_url": "https://en.yna.co.kr/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:51.556579Z"
+    }
   },
   {
     "media_name": "Al-Ahram (金字塔報)",
@@ -217,7 +350,14 @@
       "strategic_value": "中 (觀察蘇伊士運河主權與北非地緣秩序)",
       "narrative_logic": "反映埃及軍政府意圖，支持傳統區域權力平衡。"
     },
-    "links": { "official_url": "https://english.ahram.org.eg/" }
+    "links": {
+      "official_url": "https://english.ahram.org.eg/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:52.027141Z"
+    }
   },
   {
     "media_name": "Folha de S.Paulo",
@@ -228,7 +368,14 @@
       "strategic_value": "中 (金磚國家中巴西的政策擺動)",
       "narrative_logic": "反映拉美大國在美、中博弈中的實用主義立場。"
     },
-    "links": { "official_url": "https://www.folha.uol.com.br/" }
+    "links": {
+      "official_url": "https://www.folha.uol.com.br/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:53.118902Z"
+    }
   },
   {
     "media_name": "ABC News (澳洲廣播公司)",
@@ -239,7 +386,14 @@
       "strategic_value": "高 (AUKUS 協議與南太平洋島國外交競爭)",
       "narrative_logic": "反映澳洲作為五眼聯盟側翼在印太地區的安全焦慮與動作。"
     },
-    "links": { "official_url": "https://www.abc.net.au/news" }
+    "links": {
+      "official_url": "https://www.abc.net.au/news"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:53.271392Z"
+    }
   },
   {
     "media_name": "TRT World",
@@ -250,7 +404,14 @@
       "strategic_value": "高 (觀察土耳其在北約與歐亞橋樑間的擺動)",
       "narrative_logic": "推廣「新鄂圖曼主義」，支持土耳其作為區域強權的影響力。"
     },
-    "links": { "official_url": "https://www.trtworld.com/" }
+    "links": {
+      "official_url": "https://www.trtworld.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:53.459013Z"
+    }
   },
   {
     "media_name": "South China Morning Post (南華早報)",
@@ -261,7 +422,14 @@
       "strategic_value": "高 (理解中國立場與西方視角對接的窗口)",
       "narrative_logic": "在紅線邊緣提供深度報導，反映中國精英與世界的對話。"
     },
-    "links": { "official_url": "https://www.scmp.com/" }
+    "links": {
+      "official_url": "https://www.scmp.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:53.645748Z"
+    }
   },
   {
     "media_name": "RT (Russia Today)",
@@ -272,7 +440,14 @@
       "strategic_value": "低至中 (研究俄羅斯對外資訊戰與反西方論調)",
       "narrative_logic": "主動進攻性敘事，利用西方內部分裂進行宣傳。"
     },
-    "links": { "official_url": "https://www.rt.com/" }
+    "links": {
+      "official_url": "https://www.rt.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:08:55.095150Z"
+    }
   },
   {
     "media_name": "Tehran Times",
@@ -283,7 +458,14 @@
       "strategic_value": "中 (觀察伊朗「抵抗之弧」的戰略紅線)",
       "narrative_logic": "反映什葉派核心權力的對外強硬立場。"
     },
-    "links": { "official_url": "https://www.tehrantimes.com/" }
+    "links": {
+      "official_url": "https://www.tehrantimes.com/"
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 0,
+      "verified_at": "2026-03-17T17:09:05.248708Z"
+    }
   },
   {
     "media_name": "The Guardian (衛報)",
@@ -294,7 +476,14 @@
       "strategic_value": "中高 (全球環境保護、人權與左翼進步派議程)",
       "narrative_logic": "對權力持強烈懷疑態度，支持公民權利與氣候行動。"
     },
-    "links": { "official_url": "https://www.theguardian.com/world" }
+    "links": {
+      "official_url": "https://www.theguardian.com/world"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:05.335234Z"
+    }
   },
   {
     "media_name": "Caixin (財新網)",
@@ -305,7 +494,14 @@
       "strategic_value": "高 (中國國內金融風險與技術官僚思維)",
       "narrative_logic": "在有限空間內提供最真實的中國經濟數據調查。"
     },
-    "links": { "official_url": "https://www.caixin.com/" }
+    "links": {
+      "official_url": "https://www.caixin.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:06.722887Z"
+    }
   },
   {
     "media_name": "Arab News",
@@ -316,7 +512,14 @@
       "strategic_value": "中高 (沙國王儲現代化改革與能源政治)",
       "narrative_logic": "展示沙烏地作為全球現代化世俗國家的轉向。"
     },
-    "links": { "official_url": "https://www.arabnews.com/" }
+    "links": {
+      "official_url": "https://www.arabnews.com/"
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 403,
+      "verified_at": "2026-03-17T17:09:06.822162Z"
+    }
   },
   {
     "media_name": "Haaretz (哈雷茲報)",
@@ -327,7 +530,14 @@
       "strategic_value": "高 (觀察以色列內部社會分裂與極右政權紅線)",
       "narrative_logic": "代表以色列自由派，反對擴大定居點與宗教極端主義。"
     },
-    "links": { "official_url": "https://www.haaretz.com/" }
+    "links": {
+      "official_url": "https://www.haaretz.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:07.096013Z"
+    }
   },
   {
     "media_name": "Mail & Guardian",
@@ -338,7 +548,14 @@
       "strategic_value": "中高 (觀察「全球南方」領導權競爭與南非立場)",
       "narrative_logic": "反映非洲大陸對現有國際秩序的批判性思考。"
     },
-    "links": { "official_url": "https://mg.co.za/" }
+    "links": {
+      "official_url": "https://mg.co.za/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:08.781290Z"
+    }
   },
   {
     "media_name": "Tuoi Tre News",
@@ -349,7 +566,14 @@
       "strategic_value": "中 (越南供應鏈地位與南海領土主張)",
       "narrative_logic": "反映越南在美、中兩強間的「竹子外交」與國族利益。"
     },
-    "links": { "official_url": "https://tuoitrenews.vn/" }
+    "links": {
+      "official_url": "https://tuoitrenews.vn/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:10.814299Z"
+    }
   },
   {
     "media_name": "Jakarta Post",
@@ -360,7 +584,14 @@
       "strategic_value": "中 (觀察東協龍頭印尼在資源出口與地緣的中立地位)",
       "narrative_logic": "體現印尼「不結盟」與「互利」的外交哲學。"
     },
-    "links": { "official_url": "https://www.thejakartapost.com/" }
+    "links": {
+      "official_url": "https://www.thejakartapost.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:11.438345Z"
+    }
   },
   {
     "media_name": "Corriere della Sera",
@@ -371,7 +602,14 @@
       "strategic_value": "中 (地中海安全與歐盟財政政策變遷)",
       "narrative_logic": "反映南歐國家在歐盟框架內的集體利益。"
     },
-    "links": { "official_url": "https://www.corriere.it/" }
+    "links": {
+      "official_url": "https://www.corriere.it/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:11.639709Z"
+    }
   },
   {
     "media_name": "El País",
@@ -382,7 +620,14 @@
       "strategic_value": "中高 (連接歐洲與拉美政治的敘事橋樑)",
       "narrative_logic": "反映西班牙在歐盟與西語圈的多邊影響力。"
     },
-    "links": { "official_url": "https://english.elpais.com/" }
+    "links": {
+      "official_url": "https://english.elpais.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:12.325682Z"
+    }
   },
   {
     "media_name": "Global Times (環球時報)",
@@ -393,7 +638,14 @@
       "strategic_value": "中 (判斷中國民族主義情緒與非正式外交紅線)",
       "narrative_logic": "以更激進的語氣傳達官方不便直接說明的強硬意圖。"
     },
-    "links": { "official_url": "https://www.globaltimes.cn/" }
+    "links": {
+      "official_url": "https://www.globaltimes.cn/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:12.817630Z"
+    }
   },
   {
     "media_name": "Nikkei Asia (日經亞洲)",
@@ -404,7 +656,14 @@
       "strategic_value": "極高 (掌握亞洲半導體與高科技競爭實況)",
       "narrative_logic": "以商業視角剖析亞洲地緣風險，是產業決策者的關鍵情報。"
     },
-    "links": { "official_url": "https://asia.nikkei.com/" }
+    "links": {
+      "official_url": "https://asia.nikkei.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:14.342790Z"
+    }
   },
   {
     "media_name": "Times of India",
@@ -415,7 +674,14 @@
       "strategic_value": "中 (觀察印度民粹主義與龐大中產階級傾向)",
       "narrative_logic": "反映印度崛起的民族自豪感與商業野心。"
     },
-    "links": { "official_url": "https://timesofindia.indiatimes.com/" }
+    "links": {
+      "official_url": "https://timesofindia.indiatimes.com/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:14.750448Z"
+    }
   },
   {
     "media_name": "Sydney Morning Herald",
@@ -426,7 +692,14 @@
       "strategic_value": "中 (澳洲在對華貿易與美澳安保間的掙扎)",
       "narrative_logic": "反映澳洲商業精英對印太安全局勢的務實判斷。"
     },
-    "links": { "official_url": "https://www.smh.com.au/" }
+    "links": {
+      "official_url": "https://www.smh.com.au/"
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T17:09:14.832998Z"
+    }
   },
   {
     "media_name": "Financial Times (金融時報)",
@@ -437,6 +710,13 @@
       "strategic_value": "極高 (判斷全球主要大國的財政政策與制裁路徑)",
       "narrative_logic": "古典自由主義視角，關注市場規則與地緣穩定的博弈。"
     },
-    "links": { "official_url": "https://www.ft.com/" }
+    "links": {
+      "official_url": "https://www.ft.com/"
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 403,
+      "verified_at": "2026-03-17T17:09:14.948640Z"
+    }
   }
 ]
