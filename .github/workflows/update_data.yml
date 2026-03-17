@@ -1,0 +1,32 @@
+name: Global News Auto-Maintenance
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # 每日 UTC 04:00 (台灣時間 12:00) 執行
+  workflow_dispatch: # 允許手動按下按鈕執行
+
+jobs:
+  update-database:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Maintainer Script
+        run: python scripts/maintainer.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "System-Automator"
+          git config --global user.email "automator@github.com"
+          git add data/news_sources.json
+          git commit -m "Automated update: News sources verified [Skip CI]" || exit 0
+          git push
