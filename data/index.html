@@ -8,7 +8,7 @@
     <style>
         .block-tag { font-size: 0.8rem; padding: 2px 8px; border-radius: 4px; }
         .realist-note { font-style: italic; color: #666; font-size: 0.9rem; border-left: 3px solid #dee2e6; padding-left: 10px; }
-        .card { transition: transform 0.2s; }
+        .card { transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .card:hover { transform: translateY(-5px); }
     </style>
 </head>
@@ -20,20 +20,42 @@
     </nav>
     <div class="container py-3">
         <div id="news-container" class="row">
+            <div class="col-12 text-center">
+                <p class="text-muted">正在載入地緣政治數據庫...</p>
             </div>
+        </div>
     </div>
+
     <script>
-        fetch('data/news_sources.json')
-            .then(response => response.json())
+        // 使用相對路徑確保 GitHub Pages 兼容性
+        const dataPath = 'data/news_sources.json';
+
+        console.log("正在嘗試讀取資料庫：" + dataPath);
+
+        fetch(dataPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("HTTP error, status = " + response.status);
+                }
+                return response.json();
+            })
             .then(data => {
+                console.log("資料讀取成功:", data);
                 const container = document.getElementById('news-container');
+                
+                if (data.length === 0) {
+                    container.innerHTML = '<div class="col-12 text-center"><p class="text-danger">資料庫內無資料。</p></div>';
+                    return;
+                }
+
+                container.innerHTML = ''; // 清除載入中文字
                 data.forEach(item => {
                     container.innerHTML += `
                         <div class="col-md-6 mb-4">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100">
                                 <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start">
-                                        <h5 class="card-title text-primary">${item.media_name}</h5>
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h5 class="card-title text-primary m-0">${item.media_name}</h5>
                                         <span class="badge bg-secondary block-tag">${item.geopolitical_block}</span>
                                     </div>
                                     <h6 class="card-subtitle mb-2 text-muted small">${item.geographic_info.continent} (${item.geographic_info.country_code})</h6>
@@ -44,12 +66,17 @@
                                         ${item.links.rss_feed ? `<a href="${item.links.rss_feed}" target="_blank" class="btn btn-outline-info btn-sm">RSS</a>` : ''}
                                     </div>
                                 </div>
-                                <div class="card-footer text-muted small">
-                                    狀態：${item.status.http_code === 200 ? '🟢 在線' : '🔴 檢測失敗'} | 最後校驗：${new Date(item.status.verified_at).toLocaleString()}
+                                <div class="card-footer text-muted small bg-white border-top-0">
+                                    最後校驗：${new Date(item.status.verified_at).toLocaleString('zh-TW')}
                                 </div>
                             </div>
                         </div>`;
                 });
+            })
+            .catch(error => {
+                console.error("讀取失敗:", error);
+                document.getElementById('news-container').innerHTML = 
+                    '<div class="col-12 text-center"><p class="text-danger">資料載入失敗，請確認 data/news_sources.json 格式是否正確。</p></div>';
             });
     </script>
 </body>
