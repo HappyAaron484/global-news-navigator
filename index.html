@@ -3,67 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>全球新聞導航 - 實戰運作版</title>
+    <title>全球地緣政治導航系統</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; }
-        .card { border: none; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .realist-note { background: #eef2f3; padding: 12px; border-radius: 8px; font-size: 0.9rem; color: #444; border-left: 5px solid #0d6efd; }
+        body { background-color: #0d1117; color: #c9d1d9; font-family: -apple-system, system-ui, sans-serif; }
+        .navbar { background-color: #161b22 !important; border-bottom: 1px solid #30363d; }
+        .card { background-color: #161b22; border: 1px solid #30363d; border-radius: 8px; transition: 0.2s; }
+        .card:hover { border-color: #58a6ff; }
+        .strategic-high { border-left: 4px solid #f85149 !important; }
+        .realist-note { background: #0d1117; border-radius: 4px; padding: 12px; font-size: 0.9rem; color: #8b949e; }
+        .btn-filter { margin-right: 5px; margin-bottom: 5px; border-color: #30363d; color: #8b949e; }
+        .btn-filter.active { background-color: #21262d; color: #58a6ff; border-color: #58a6ff; }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark mb-4 shadow">
+    <nav class="navbar navbar-dark mb-4">
         <div class="container">
-            <span class="navbar-brand mb-0 h1">🌐 全球新聞導航系統</span>
+            <span class="navbar-brand fw-bold">🌐 全球新聞導航系統 <small class="text-muted" style="font-size: 0.7rem;">(Quant & Realpolitik Edition)</small></span>
         </div>
     </nav>
 
-    <div class="container py-3">
-        <div id="status-msg" class="alert alert-info">系統正在從數據庫抓取地緣政治情報...</div>
-        <div id="news-container" class="row"></div>
+    <div class="container">
+        <div id="filter-bar" class="mb-4">
+            <button class="btn btn-sm btn-filter active" onclick="filterData('All')">全部</button>
+            <button class="btn btn-sm btn-filter" onclick="filterData('印太')">印太 / 第一島鏈</button>
+            <button class="btn btn-sm btn-filter" onclick="filterData('北美')">北美核心</button>
+            <button class="btn btn-sm btn-filter" onclick="filterData('中東')">中東能源</button>
+            <button class="btn btn-sm btn-filter" onclick="filterData('BRICS+')">金磚 / 南半球</button>
+        </div>
+
+        <div id="news-container" class="row">
+            </div>
     </div>
 
     <script>
-        async function init() {
-            const container = document.getElementById('news-container');
-            const statusMsg = document.getElementById('status-msg');
-            
-            try {
-                // 重點：當 index.html 在根目錄時，路徑就是 data/news_sources.json
-                const response = await fetch('data/news_sources.json?v=' + Date.now());
-                
-                if (!response.ok) throw new Error('找不到數據庫檔案 (HTTP ' + response.status + ')');
-                
-                const data = await response.json();
-                statusMsg.style.display = 'none';
+        let allData = [];
 
-                let html = '';
-                data.forEach(item => {
-                    html += `
-                        <div class="col-md-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <h5 class="card-title fw-bold text-primary">${item.media_name}</h5>
-                                        <span class="badge bg-secondary">${item.geopolitical_block}</span>
-                                    </div>
-                                    <p class="text-muted small">${item.geographic_info.continent} (${item.geographic_info.country_code})</p>
-                                    <div class="realist-note mb-3"><strong>現實主義評註：</strong><br>${item.realist_note}</div>
-                                    <a href="${item.links.official_url}" target="_blank" class="btn btn-outline-dark btn-sm">開啟媒體源</a>
-                                </div>
-                                <div class="card-footer bg-white border-0 text-muted small">
-                                    最後校驗：${new Date(item.status.verified_at).toLocaleString('zh-TW')}
-                                </div>
-                            </div>
-                        </div>`;
-                });
-                container.innerHTML = html;
+        async function init() {
+            try {
+                const response = await fetch('data/news_sources.json?v=' + Date.now());
+                allData = await response.json();
+                renderCards(allData);
             } catch (err) {
-                statusMsg.className = 'alert alert-danger';
-                statusMsg.innerText = '⚠️ 載入失敗：' + err.message + '。請確保 data/news_sources.json 格式正確。';
+                console.error("數據加載失敗", err);
             }
         }
+
+        function renderCards(data) {
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            data.forEach(item => {
+                const isHighValue = item.analysis.strategic_value.includes("最高") || item.analysis.strategic_value.includes("極高");
+                container.innerHTML += `
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 ${isHighValue ? 'strategic-high' : ''}">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h5 class="card-title fw-bold text-white mb-0">${item.media_name}</h5>
+                                    <span class="badge bg-secondary">${item.geopolitical_block}</span>
+                                </div>
+                                <p class="text-muted small">${item.geographic_info.continent} | ${item.attributes.media_type}</p>
+                                <div class="realist-note mb-3">
+                                    <strong class="text-primary small">戰略價值：${item.analysis.strategic_value}</strong><br>
+                                    <span class="small">${item.analysis.narrative_logic}</span>
+                                </div>
+                                <div class="mb-3 small text-warning">
+                                    <strong>風險指標：</strong>${item.analysis.risk_indicator}
+                                </div>
+                                <a href="${item.links.official_url}" target="_blank" class="btn btn-outline-primary btn-sm">開啟情報源</a>
+                            </div>
+                        </div>
+                    </div>`;
+            });
+        }
+
+        function filterData(region) {
+            // 更新按鈕樣式
+            document.querySelectorAll('.btn-filter').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            if (region === 'All') {
+                renderCards(allData);
+            } else if (region === 'BRICS+') {
+                renderCards(allData.filter(i => i.geopolitical_block.includes('BRICS+')));
+            } else {
+                renderCards(allData.filter(i => i.region === region));
+            }
+        }
+
         window.onload = init;
     </script>
 </body>
