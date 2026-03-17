@@ -38,7 +38,7 @@
 
             try {
                 // 2. 嘗試讀取資料 (加上隨機參數防止 GitHub 強制快取舊檔案)
-                const jsonPath = './data/news_sources.json?v=' + Date.now();
+                const jsonPath = '/data/news_sources.json?v=' + Date.now();
                 debug.innerText += `[2/3] 正在請求資料: ${jsonPath}\n`;
 
                 const response = await fetch(jsonPath);
