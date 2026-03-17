@@ -2,19 +2,47 @@
   {
     "media_name": "NHK World",
     "geopolitical_block": "第一島鏈",
-    "geographic_info": { "continent": "Asia", "country_code": "JP" },
-    "attributes": { "media_type": "官媒", "bias_index": "中立", "funding_source": "收視費" },
+    "geographic_info": {
+      "continent": "Asia",
+      "country_code": "JP"
+    },
+    "attributes": {
+      "media_type": "官媒",
+      "bias_index": "中立",
+      "funding_source": "收視費"
+    },
     "realist_note": "反映日美同盟視角下的印太秩序穩定。",
-    "links": { "official_url": "https://www3.nhk.or.jp/nhkworld/", "rss_feed": "" },
-    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+    "links": {
+      "official_url": "https://www3.nhk.or.jp/nhkworld/",
+      "rss_feed": ""
+    },
+    "status": {
+      "is_live": true,
+      "http_code": 200,
+      "verified_at": "2026-03-17T16:43:02.983338Z"
+    }
   },
   {
     "media_name": "Reuters",
     "geopolitical_block": "歐美核心",
-    "geographic_info": { "continent": "Global", "country_code": "GB" },
-    "attributes": { "media_type": "通訊社", "bias_index": "中立", "funding_source": "湯森路透" },
+    "geographic_info": {
+      "continent": "Global",
+      "country_code": "GB"
+    },
+    "attributes": {
+      "media_type": "通訊社",
+      "bias_index": "中立",
+      "funding_source": "湯森路透"
+    },
     "realist_note": "全球金融資訊基準，採去意識形態化敘事。",
-    "links": { "official_url": "https://www.reuters.com/", "rss_feed": "" },
-    "status": { "is_live": true, "http_code": 200, "verified_at": "2026-03-18T00:00:00Z" }
+    "links": {
+      "official_url": "https://www.reuters.com/",
+      "rss_feed": ""
+    },
+    "status": {
+      "is_live": false,
+      "http_code": 401,
+      "verified_at": "2026-03-17T16:43:03.149866Z"
+    }
   }
 ]
