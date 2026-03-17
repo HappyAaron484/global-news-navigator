@@ -1,0 +1,11 @@
+[
+  {
+    "media_name": "BBC News",
+    "geopolitical_block": "歐美核心",
+    "geographic_info": { "continent": "Europe", "country_code": "GB" },
+    "attributes": { "media_type": "民營", "bias_index": "中立偏左", "funding_source": "電視執照費" },
+    "realist_note": "維護英國軟實力，在後殖民議題上有結構性盲區。",
+    "links": { "official_url": "https://www.bbc.com/news", "rss_feed": "http://feeds.bbci.co.uk/news/rss.xml" },
+    "status": { "is_live": false, "http_code": 200, "verified_at": "2026-03-17T00:00:00Z" }
+  }
+]
