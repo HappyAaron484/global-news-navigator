@@ -14,7 +14,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:51.467696Z"
+      "verified_at": "2026-05-13T06:40:19.596815Z"
     }
   },
   {
@@ -32,7 +32,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:51.774971Z"
+      "verified_at": "2026-05-13T06:40:19.697669Z"
     }
   },
   {
@@ -50,7 +50,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:52.799667Z"
+      "verified_at": "2026-05-13T06:40:20.672899Z"
     }
   },
   {
@@ -68,7 +68,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:52.970776Z"
+      "verified_at": "2026-05-13T06:40:20.762037Z"
     }
   },
   {
@@ -86,7 +86,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:53.826649Z"
+      "verified_at": "2026-05-13T06:40:20.821439Z"
     }
   },
   {
@@ -104,7 +104,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:54.679935Z"
+      "verified_at": "2026-05-13T06:40:21.048032Z"
     }
   },
   {
@@ -122,7 +122,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:55.907864Z"
+      "verified_at": "2026-05-13T06:40:22.022346Z"
     }
   },
   {
@@ -140,7 +140,7 @@
     "status": {
       "is_live": false,
       "http_code": 401,
-      "verified_at": "2026-05-12T06:29:56.088847Z"
+      "verified_at": "2026-05-13T06:40:22.074745Z"
     }
   },
   {
@@ -158,7 +158,7 @@
     "status": {
       "is_live": false,
       "http_code": 401,
-      "verified_at": "2026-05-12T06:29:56.278364Z"
+      "verified_at": "2026-05-13T06:40:22.153522Z"
     }
   },
   {
@@ -176,7 +176,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-05-12T06:29:56.458271Z"
+      "verified_at": "2026-05-13T06:40:22.291823Z"
     }
   },
   {
@@ -194,7 +194,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:56.880388Z"
+      "verified_at": "2026-05-13T06:40:22.546835Z"
     }
   },
   {
@@ -212,7 +212,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:56.979609Z"
+      "verified_at": "2026-05-13T06:40:22.616067Z"
     }
   },
   {
@@ -230,7 +230,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:57.149901Z"
+      "verified_at": "2026-05-13T06:40:22.723154Z"
     }
   },
   {
@@ -248,7 +248,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:57.322520Z"
+      "verified_at": "2026-05-13T06:40:22.998618Z"
     }
   },
   {
@@ -266,7 +266,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:57.469064Z"
+      "verified_at": "2026-05-13T06:40:27.581029Z"
     }
   },
   {
@@ -284,7 +284,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:29:57.689800Z"
+      "verified_at": "2026-05-13T06:40:27.694038Z"
     }
   },
   {
@@ -302,7 +302,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-05-12T06:29:57.833315Z"
+      "verified_at": "2026-05-13T06:40:27.758694Z"
     }
   },
   {
@@ -320,7 +320,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:00.223597Z"
+      "verified_at": "2026-05-13T06:40:29.230747Z"
     }
   },
   {
@@ -338,7 +338,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:01.240462Z"
+      "verified_at": "2026-05-13T06:40:30.072183Z"
     }
   },
   {
@@ -356,7 +356,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:02.914513Z"
+      "verified_at": "2026-05-13T06:40:31.478060Z"
     }
   },
   {
@@ -374,7 +374,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:07.491521Z"
+      "verified_at": "2026-05-13T06:40:33.587962Z"
     }
   },
   {
@@ -392,7 +392,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:07.806337Z"
+      "verified_at": "2026-05-13T06:40:33.804138Z"
     }
   },
   {
@@ -410,7 +410,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:07.981826Z"
+      "verified_at": "2026-05-13T06:40:33.880395Z"
     }
   },
   {
@@ -428,7 +428,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:08.272873Z"
+      "verified_at": "2026-05-13T06:40:34.077597Z"
     }
   },
   {
@@ -446,7 +446,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:09.839297Z"
+      "verified_at": "2026-05-13T06:40:35.297571Z"
     }
   },
   {
@@ -464,7 +464,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:10.788048Z"
+      "verified_at": "2026-05-13T06:40:36.683583Z"
     }
   },
   {
@@ -482,7 +482,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:10.981710Z"
+      "verified_at": "2026-05-13T06:40:36.758781Z"
     }
   },
   {
@@ -500,7 +500,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:12.294526Z"
+      "verified_at": "2026-05-13T06:40:38.030385Z"
     }
   },
   {
@@ -518,7 +518,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:12.477533Z"
+      "verified_at": "2026-05-13T06:40:38.194191Z"
     }
   },
   {
@@ -536,7 +536,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:12.832476Z"
+      "verified_at": "2026-05-13T06:40:38.307858Z"
     }
   },
   {
@@ -554,7 +554,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:14.019020Z"
+      "verified_at": "2026-05-13T06:40:39.637659Z"
     }
   },
   {
@@ -570,9 +570,9 @@
       "official_url": "https://tuoitrenews.vn/"
     },
     "status": {
-      "is_live": false,
+      "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:14.429277Z"
+      "verified_at": "2026-05-13T06:40:41.331662Z"
     }
   },
   {
@@ -590,7 +590,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:15.654288Z"
+      "verified_at": "2026-05-13T06:40:41.862225Z"
     }
   },
   {
@@ -608,7 +608,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:20.778487Z"
+      "verified_at": "2026-05-13T06:40:42.515545Z"
     }
   },
   {
@@ -626,7 +626,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-05-12T06:30:20.992959Z"
+      "verified_at": "2026-05-13T06:40:42.700604Z"
     }
   },
   {
@@ -644,7 +644,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:21.325028Z"
+      "verified_at": "2026-05-13T06:40:43.237194Z"
     }
   },
   {
@@ -662,7 +662,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:21.648698Z"
+      "verified_at": "2026-05-13T06:40:43.538743Z"
     }
   },
   {
@@ -680,7 +680,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:21.844264Z"
+      "verified_at": "2026-05-13T06:40:43.838630Z"
     }
   },
   {
@@ -698,7 +698,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-05-12T06:30:22.076080Z"
+      "verified_at": "2026-05-13T06:40:43.994548Z"
     }
   },
   {
@@ -716,7 +716,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-05-12T06:30:22.229114Z"
+      "verified_at": "2026-05-13T06:40:44.088342Z"
     }
   }
 ]
