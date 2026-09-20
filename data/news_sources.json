@@ -14,7 +14,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-09-19T08:18:34.847623Z"
+      "verified_at": "2026-09-20T08:50:11.741823Z"
     }
   },
   {
@@ -32,7 +32,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:35.074275Z"
+      "verified_at": "2026-09-20T08:50:11.985862Z"
     }
   },
   {
@@ -50,7 +50,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:35.907186Z"
+      "verified_at": "2026-09-20T08:50:13.186719Z"
     }
   },
   {
@@ -68,7 +68,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:36.146835Z"
+      "verified_at": "2026-09-20T08:50:13.283206Z"
     }
   },
   {
@@ -86,7 +86,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:36.588420Z"
+      "verified_at": "2026-09-20T08:50:14.024495Z"
     }
   },
   {
@@ -104,7 +104,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:37.676833Z"
+      "verified_at": "2026-09-20T08:50:14.952009Z"
     }
   },
   {
@@ -122,7 +122,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:38.926581Z"
+      "verified_at": "2026-09-20T08:50:15.741215Z"
     }
   },
   {
@@ -140,7 +140,7 @@
     "status": {
       "is_live": false,
       "http_code": 401,
-      "verified_at": "2026-09-19T08:18:39.372197Z"
+      "verified_at": "2026-09-20T08:50:15.947740Z"
     }
   },
   {
@@ -158,7 +158,7 @@
     "status": {
       "is_live": false,
       "http_code": 401,
-      "verified_at": "2026-09-19T08:18:39.579259Z"
+      "verified_at": "2026-09-20T08:50:16.030620Z"
     }
   },
   {
@@ -176,7 +176,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-09-19T08:18:39.837571Z"
+      "verified_at": "2026-09-20T08:50:16.118169Z"
     }
   },
   {
@@ -194,7 +194,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:40.281793Z"
+      "verified_at": "2026-09-20T08:50:16.297026Z"
     }
   },
   {
@@ -212,7 +212,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:40.488432Z"
+      "verified_at": "2026-09-20T08:50:16.416568Z"
     }
   },
   {
@@ -230,7 +230,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:40.712973Z"
+      "verified_at": "2026-09-20T08:50:16.666931Z"
     }
   },
   {
@@ -248,7 +248,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:41.157691Z"
+      "verified_at": "2026-09-20T08:50:16.759506Z"
     }
   },
   {
@@ -266,7 +266,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:41.352765Z"
+      "verified_at": "2026-09-20T08:50:16.806942Z"
     }
   },
   {
@@ -284,7 +284,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:41.600335Z"
+      "verified_at": "2026-09-20T08:50:16.982596Z"
     }
   },
   {
@@ -302,7 +302,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-09-19T08:18:41.820661Z"
+      "verified_at": "2026-09-20T08:50:17.058474Z"
     }
   },
   {
@@ -320,7 +320,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:42.775218Z"
+      "verified_at": "2026-09-20T08:50:17.631747Z"
     }
   },
   {
@@ -338,7 +338,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:43.553352Z"
+      "verified_at": "2026-09-20T08:50:18.855411Z"
     }
   },
   {
@@ -354,9 +354,9 @@
       "official_url": "https://english.ahram.org.eg/"
     },
     "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-09-19T08:18:43.969908Z"
+      "is_live": false,
+      "http_code": 403,
+      "verified_at": "2026-09-20T08:50:18.962920Z"
     }
   },
   {
@@ -374,7 +374,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:45.245536Z"
+      "verified_at": "2026-09-20T08:50:20.055332Z"
     }
   },
   {
@@ -392,7 +392,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:45.552977Z"
+      "verified_at": "2026-09-20T08:50:20.120146Z"
     }
   },
   {
@@ -410,7 +410,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:46.034845Z"
+      "verified_at": "2026-09-20T08:50:20.366913Z"
     }
   },
   {
@@ -428,7 +428,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:46.374670Z"
+      "verified_at": "2026-09-20T08:50:20.451761Z"
     }
   },
   {
@@ -446,7 +446,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:48.122838Z"
+      "verified_at": "2026-09-20T08:50:21.865817Z"
     }
   },
   {
@@ -464,7 +464,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:49.382405Z"
+      "verified_at": "2026-09-20T08:50:22.637104Z"
     }
   },
   {
@@ -482,7 +482,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:49.787938Z"
+      "verified_at": "2026-09-20T08:50:22.700760Z"
     }
   },
   {
@@ -500,7 +500,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:50.307147Z"
+      "verified_at": "2026-09-20T08:50:23.494743Z"
     }
   },
   {
@@ -518,7 +518,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:50.549326Z"
+      "verified_at": "2026-09-20T08:50:23.574409Z"
     }
   },
   {
@@ -536,7 +536,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:50.929868Z"
+      "verified_at": "2026-09-20T08:50:23.756244Z"
     }
   },
   {
@@ -554,7 +554,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:51.279648Z"
+      "verified_at": "2026-09-20T08:50:23.827140Z"
     }
   },
   {
@@ -572,7 +572,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:53.267824Z"
+      "verified_at": "2026-09-20T08:50:26.062002Z"
     }
   },
   {
@@ -590,7 +590,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:53.983798Z"
+      "verified_at": "2026-09-20T08:50:26.699659Z"
     }
   },
   {
@@ -608,7 +608,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:54.766481Z"
+      "verified_at": "2026-09-20T08:50:27.065415Z"
     }
   },
   {
@@ -624,9 +624,9 @@
       "official_url": "https://english.elpais.com/"
     },
     "status": {
-      "is_live": true,
-      "http_code": 200,
-      "verified_at": "2026-09-19T08:18:55.227054Z"
+      "is_live": false,
+      "http_code": 403,
+      "verified_at": "2026-09-20T08:50:27.184979Z"
     }
   },
   {
@@ -644,7 +644,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:55.845318Z"
+      "verified_at": "2026-09-20T08:50:27.710042Z"
     }
   },
   {
@@ -662,7 +662,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:57.083476Z"
+      "verified_at": "2026-09-20T08:50:28.024992Z"
     }
   },
   {
@@ -680,7 +680,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:57.816521Z"
+      "verified_at": "2026-09-20T08:50:28.090425Z"
     }
   },
   {
@@ -698,7 +698,7 @@
     "status": {
       "is_live": true,
       "http_code": 200,
-      "verified_at": "2026-09-19T08:18:58.026578Z"
+      "verified_at": "2026-09-20T08:50:28.210389Z"
     }
   },
   {
@@ -716,7 +716,7 @@
     "status": {
       "is_live": false,
       "http_code": 403,
-      "verified_at": "2026-09-19T08:18:58.339742Z"
+      "verified_at": "2026-09-20T08:50:28.299782Z"
     }
   }
 ]
